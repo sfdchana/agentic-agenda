@@ -22,6 +22,14 @@ Around it: Python (home base), TypeScript, LangChain, LangGraph, Braintrust
 data projects (House of Sof) — every skill learned by shipping something I can
 defend architecturally.
 
+**Foundations (woven in, not front-loaded).** Coming from Salesforce, the real
+shift is from a managed platform to systems I own — capacity, databases, system
+design, the full lifecycle. I learn these *applied* inside the build months, not
+as a separate phase (see `foundations.md` for the gap map and where each shows
+up). The one upfront piece is the mindset reframe — read it Week 1. Ongoing all
+year: *Designing Data-Intensive Applications*, slowly. Home base stays **Python**
+(+ TS) — no Java/Spring detour; that points away from the data/AI lane.
+
 **How detail works.** Monthly folders named for the month each starts in (months
 run ~mid-month to mid-month). December folds in holiday slack.
 
