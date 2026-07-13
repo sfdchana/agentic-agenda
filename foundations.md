@@ -1,8 +1,8 @@
-# Foundations — Salesforce → Software Engineering
-### The mindset shift, prioritized for a data + AI lane
+# Foundations
+# Salesforce → AI Focused Software Engineering
 
-The real news, and it's good: the hard parts of engineering — complex business
-logic, data modeling, enterprise architecture, owning delivery — I already do.
+Background: the hard parts of engineering like complex business
+logic, data modeling, enterprise architecture, owning delivery - I already do.
 The gap isn't *coding*. It's moving from a **managed platform that hides the
 machine** to **systems I own end to end**, where *I* define the limits instead of
 the platform handing them to me.
