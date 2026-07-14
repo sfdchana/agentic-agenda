@@ -48,17 +48,21 @@ Not week-by-week; these compound the whole time and *are* the title-change case:
 
 ---
 
-## Month 1 — july/ (Jul 13 – ~Aug 12) — LLM foundations in Python
-Get fluent calling models directly and producing *structured* output — the bridge
-between "clean data" and "AI."
-- W1: LLM fundamentals in Python — raw Anthropic SDK: tokens, sampling, streaming,
-  cost tracking. No framework yet.
-- W2: Structured output done right — Pydantic schemas, tool calling; a script that
-  classifies one archive piece into the taste schema and validates it. Write-up.
-- W3: TypeScript ramp — call Claude from TS; where TS fits (frontend/edge) vs
-  Python (data/AI).
-- W4: Prompt + context engineering — caching, system-prompt design, few-shot from
-  real pieces. Consolidate, push repos.
+## Month 1 — july/ (Jul 13 – ~mid-Aug) — LLM + agent fundamentals (Python)
+Build a tool-using agent from scratch to learn how LLM APIs really work. Full
+detail + daily session files live in `july/`.
+- W1: LLM fundamentals — tokens, raw API call, sampling, streaming, structured
+  output (Pydantic; classify a real archive piece).
+- W2: Tool calling + the agent loop — one tool → the while-loop agent → watch
+  cost/context grow → error handling → write it up.
+- W3: Python depth for an Apex dev — idioms, classes/decorators/context managers,
+  port to the Anthropic SDK, pytest + type hints, asyncio.
+- W4: TypeScript ramp + prompt/context engineering — call Claude from TS; prompt
+  fundamentals, caching, context engineering (capstone).
+- W5: Consolidation — MCP, a 3-model comparison, a hand-rolled mini-eval (Month 2
+  teaser), ship repos with honest READMEs.
+**Deliverable:** a from-scratch agent + a taste-classifier, both public with
+design-doc READMEs.
 
 ## Month 2 — august/ (~Aug 13 – Sep 12) — Ingestion pipeline (clean data engineering)
 The most important skill, front-loaded: messy external data → clean structured rows.
