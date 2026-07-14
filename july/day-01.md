@@ -1,6 +1,6 @@
 # Day 01 — The agent mental model
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** what an "agent" actually is (model + tools + loop) and when a plain workflow beats an agent.
 
