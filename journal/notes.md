@@ -7,4 +7,17 @@ July 13: agent = model owns the steps; workflow = I own the steps. There are var
 July 14: * context windows describe the data or tokens (as all input and output are measured with anthropic), available to the llm or agent within the context of the task or conversation. There are different strategies available to condense (server side compaction), clear (empty thinking blocks) and retain context for different use cases, with the main use case being limits on context.
 * token counting refers to an endpoint that can tally up tokens in any type of input (image, pdf, tool, words etc) and generate the total count which is helpful when scaling use cases for prompts and inputs and wanting to govern usage limits.
 
+
+
+
+
+
+
+
   
+Day 18: * Prompt engineering can help solve a lot of gaps in responses from an llm, but things like latency and other similar system issues would be better solved with a different model, not a different prompt.
+* The more context you include in your prompt the better. Assume claude is intelligent but new to your world and the more background the better the response will be.
+* Give examples to guide Claude even more.
+* Match the style of your output desired to the style of your prompt. (I found this one interesting)
+* Using models in parallel can maximize efficiency and do a few steps in one.
+* Techniques that would be applicable to me: I think giving claude prompts in the style of desired output would be good for structuring a taste profile so that I can control most of the copy and keep it to an editorial voice instead of it generating AI slop that's recognizable as non human.also research and information gathering
