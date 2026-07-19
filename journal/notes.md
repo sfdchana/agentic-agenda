@@ -16,3 +16,11 @@ July 15/Skipped to Day 18:
 * Techniques that would be applicable to me: I think giving claude prompts in the style of desired output would be good for structuring a taste profile so that I can control most of the copy and keep it to an editorial voice instead of it generating AI slop that's recognizable as non human.also research and information gathering
 
 July 16: ran my first anthropic api call from python: ! stop_reason is how the agent loop knows to stop
+July 17: 
+tempature = how random/deterministic the result is, 0 will be the same or similar and increased tempature inc
+max tokens = length cap, how long the answer can be
+top_p = this is nucleus sampling which means it truncates the distribution by chopping off the unlikely tail, then picks from what's left. It changes how much of the list is even eligible and it's different from tempature because is just how adventouresly you pick.
+Analogy: temperature = how much you trust the rankings; top_p = how far down the rankings you're allowed to reach at all.
+streaming is basically when the llm shows the answer as it's ready like the typing effect. this way the latency appears quicker than it is because the user starts seeing the answer as it's ready instead of waiting for it all at once.
+
+July 20: 
