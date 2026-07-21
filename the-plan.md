@@ -48,6 +48,66 @@ Not week-by-week; these compound the whole time and *are* the title-change case:
 
 ---
 
+## Active Build — taste-enabled discovery (the thing I ship continuously)
+The product I actually care about, and the through-line the monthly layers feed.
+
+**The problem I'm solving.** Resale is chaos — tens of thousands of listings, no
+way to surface the *right* things. The product cuts through it: **taste-enabled
+discovery over live eBay listings, displayed beautifully on my website.**
+
+**The vision (directional, refined as I build).**
+- a taste profile (start with *mine*; maybe let a user build their own later)
+- → eBay **Browse API** pulls candidates out of the chaos
+- → a **taste layer** ranks/filters for "this is the right *kind* of thing"
+- → surfaced in a clean, beautiful UI on houseofsof.com.
+
+The monthly deliverables below aren't separate projects anymore — they're the
+**layers of this one product** (ingestion → classification → evals → semantic
+search → polish).
+
+**Own before I extend — comprehension is step zero.** Much of this is already
+built (`houseofsof-api`), but built *for* me, not in a way I can defend yet.
+Before adding anything I walk the existing architecture until I can whiteboard it
+and justify every choice. Reading rides *alongside* each chunk, not front-loaded.
+
+**Honest inventory of what exists right now.**
+- ✅ **Live admin search** (`routes/ebay.js`) — modern **Browse API** over OAuth
+  (client-credentials), token-cached. Working; it's the portal I use.
+- ⚠️ **Auto-pipeline** (`scrapers/ebay.js` + `run.js`) — full loop (fetch →
+  normalize → dedup → score → insert) but built on eBay's **Finding API, which
+  eBay shut down in early 2025.** It no longer produces anything. Reviving +
+  modernizing it onto Browse is the first real build.
+- ✅ **Postgres `items` table**, scoring/filter `rules.js`, `normalizer.js`,
+  admin review UI.
+
+**Near-term ladder (session-sized chunks, comprehension first).**
+- **Chunk 0 — Understand + defend what exists.** Walk `routes/ebay.js`,
+  `scrapers/ebay.js`, `run.js`, `normalizer.js`, the `items` schema. Draw the
+  architecture diagram *myself*. Reading: eBay Browse API (`item_summary/search`),
+  OAuth client-credentials, why REST/Browse replaced the old Finding API.
+  *Output: a diagram + a paragraph defending each boundary — the thing I can't do today.*
+- **Chunk 1 — Revive the pipeline on Browse.** Lift the working OAuth + Browse
+  call from `routes/ebay.js` into `scrapers/ebay.js`; point `fetchEbay()` at
+  `/buy/browse/v1/item_summary/search`. *Output: one real search returning live items in the terminal.*
+- **Chunk 2 — Fix the normalizer.** Map the Browse response shape to the `items`
+  columns (field names differ from Finding). *Output: real rows flowing into Postgres again — the archive fills itself.*
+- **Chunk 3 — The taste layer.** Wire the Day-5 classifier onto incoming items so
+  each gets a taste read; rank by *fit*, not just price. *Output: results ordered by taste, not noise.*
+- **Chunk 4 — Make it beautiful on the site.** A clean discovery UI on
+  houseofsof.com over the taste-ranked results (design + refine in Claude Design
+  in downtime). *Output: the thing I actually wanted to look at.*
+
+Months 3–5 below then deepen this *same* product (LangGraph classification, evals
+on my own corrections, pgvector "find similar"). Same spine, more layers.
+
+**Daily shape (flipped for momentum).** The build is the spine — most of each
+session moves this product forward; fundamentals ride along when a chunk needs
+them (the `foundations.md` philosophy). Reading is attached to the chunk it
+serves. This is what replaces the "learn an hour, maybe build 15 min" order that
+felt slow.
+
+---
+
 ## Month 1 — july/ (Jul 13 – ~mid-Aug) — LLM + agent fundamentals (Python)
 Build a tool-using agent from scratch to learn how LLM APIs really work. Full
 detail + daily session files live in `july/`.
