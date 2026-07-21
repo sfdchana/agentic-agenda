@@ -1,16 +1,16 @@
-# Day 09 — Error handling: malformed args, retries, giving up
+# Day 09 — Chunk 2: Fix the normalizer (Browse shape → items columns)
 
 - [ ] Done
 
-**After this you should know:** real agents spend most of their code on failure — bad args, retries, and knowing when to stop.
+**After this you should know:** how to map a messy external response to your own clean schema — the core skill of data engineering.
 
 ## Do (~1 hr)
-Make a tool throw or receive bad args. Handle it: validate, retry once, then give up gracefully. Add a max-turns guard so the loop can't run forever.
-Analogy: defensive Apex + a retry policy — but you own the policy now.
+The Browse response has *different field names* than the old Finding response, so `normalizer.js` `fromEbay()` needs updating. Compare one raw Browse item to the `items` columns (name, brand, price, currency, source_url, image_url). Rewrite `fromEbay()` to pull the right fields (e.g. `item.title`, `item.price.value`, `item.itemWebUrl`, `item.image.imageUrl`). Print the normalized object; confirm every column is populated.
+Analogy: a field-mapping in an integration — external payload on the left, your object on the right.
 
 ## 3 flashcard ideas
-- Three failure modes an agent must handle.
-- Why a max-turns guard?
-- Retry vs. give up — how do you decide?
+- What is a normalizer's job in one sentence?
+- Why map to your own schema instead of storing the raw API response?
+- Name three Browse fields and the columns they map to.
 
 _Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._

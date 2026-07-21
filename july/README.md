@@ -1,57 +1,50 @@
-# July — Month 1: LLM + agent fundamentals
-Starts July 13. Theme: LLM working knowledge + the agent loop, built from scratch.
-Home base is **Python** (my target language); analogies lean on **Apex /
-Salesforce** — the stuff I already know deeply. Python gets solidified in Week 3,
-TypeScript ramps in Week 4.
+# July — Month 1 sessions
 
-**Setup (alongside Week 1, ~15 min total):** install `uv` (Python envs), and
-`pnpm` + `tsx` (TS) so Weeks 3–4 have zero environment friction. Optional but
-recommended: Anki for spaced-repetition flashcards.
+**Read this first — the model changed.** These days used to be a *learn-first*
+syllabus (LLM fundamentals in order). As of **Session 6** we flipped to
+**build-first**: the spine is now the **Active Build** — taste-enabled discovery
+over eBay listings (see `../the-plan.md` → "Active Build"). Each day is now a
+**build session** that moves the product forward, and the fundamentals get pulled
+in *when a chunk needs them*, applied to real code instead of studied in the
+abstract.
 
-**Format:** one file per session, ~1 hr each, ~5 per week. Each file says what
-you should know after, links to go deeper, and has **3 flashcard ideas** — not
-finished cards. Rewrite the ones worth keeping in your own words (the rewriting
-*is* the encoding). Check the box in the file **and** on this list when done.
-Last 2 minutes of every session: a line or two in `../journal/` (log, open
-questions, ideas — see its README); prefix a-ha lines with `!` and card them
-next session.
+**Home base** stays **Python**; analogies lean on **Apex / Salesforce**. Cadence
+and streak are unchanged — one ~1-hr session, most days. Last 2 min of every
+session: a line in `../journal/` (log / question / idea); prefix a-ha lines with
+`!` and card them.
 
-### Week 1 — LLM fundamentals (Python)
-- [ ] day-01 — The agent mental model
-- [ ] day-02 — Tokens and context windows
-- [ ] day-03 — First raw API call in Python (no SDK)
-- [ ] day-04 — Sampling params and streaming
-- [ ] day-05 — Structured outputs (reliable JSON)
+**Done so far:** 01, 02, 18, 03, 04, 05 — the LLM fundamentals the build now
+stands on (agent model, tokens, prompting, raw API call, sampling, structured
+output).
 
-### Week 2 — Tool calling and the agent loop (Python)
-- [ ] day-06 — Tool calling mechanics: one tool, full round trip
-- [ ] day-07 — Build the loop: agent = model + tools + while loop
-- [ ] day-08 — Add a second tool; watch context and cost grow
-- [ ] day-09 — Error handling: malformed args, retries, giving up
-- [ ] day-10 — Write up your raw-agent lessons (publishable notes)
+### The chunks (from the plan) → the days
+- **Chunk 0 — understand + *defend* the existing pipeline**
+  - [ ] day-06 — Architecture tour: read + diagram your own pipeline
+  - [ ] day-07 — Defend it: Browse/OAuth vs the dead Finding API
+- **Chunk 1 — revive the pipeline on the Browse API**
+  - [ ] day-08 — Lift OAuth + Browse into the scraper; one live search
+- **Chunk 2 — fix the normalizer; real rows flow again**
+  - [ ] day-09 — Map the Browse response shape → `items` columns
+  - [ ] day-10 — Run end-to-end; dedup / idempotency check
+- **Chunk 3 — the taste layer: classifier ranks incoming items**
+  - [ ] day-11 — Wire the Day-5 classifier onto incoming items
+  - [ ] day-12 — Rank by taste *fit*, not price; revisit scoring
+  - [ ] day-13 — Write-up: how the taste layer decides; confident-and-wrong
+- **Chunk 4 — beautiful discovery UI on the website**
+  - [ ] day-14 — Design the discovery UI (Claude Design), static first
+  - [ ] day-15 — Wire UI → API; taste-ranked results live on the site
+- **Deepen + harden (pulled from the fundamentals library as needed)**
+  - [ ] day-16 — Reliability: rate limiting, retries/backoff on Browse
+  - [ ] day-17 — Scheduled worker: ingestion runs on a schedule
+  - [x] day-18 — Prompt engineering fundamentals *(done early)*
+  - [ ] day-19 — Python depth where it bit you: refactor the scraper clean
+  - [ ] day-20 — pytest + type hints: test the normalizer
+  - [ ] day-21 — "My taste as data": sketch the taste-profile model
+  - [ ] day-22 — Cost + context awareness on batch classify
+  - [ ] day-23 — Architecture write-up v2: the whole discovery system
+  - [ ] day-24 — Polish the UI / responsive
+  - [ ] day-25 — Month-1 wrap: README + demo; what shipped
 
-### Week 3 — Python depth (for an Apex dev), in agent context
-- [ ] day-11 — Python idioms for a Salesforce dev
-- [ ] day-12 — Classes, decorators, context managers
-- [ ] day-13 — Solidify the agent with the Anthropic SDK
-- [ ] day-14 — pytest + type hints: test your tool dispatch
-- [ ] day-15 — asyncio basics vs Apex async
-
-### Week 4 — TypeScript ramp + prompt/context engineering
-- [ ] day-16 — Pure TS: types, interfaces, pnpm/tsx
-- [ ] day-17 — Pure TS: async/await + fetch — call Claude from TS
-- [ ] day-18 — Prompt engineering fundamentals
-- [ ] day-19 — Prompt caching and the cost levers
-- [ ] day-20 — Context engineering (the month's capstone concept)
-
-### Week 5 — Consolidation
-- [ ] day-21 — MCP: run an existing server against your agent
-- [ ] day-22 — Model landscape: same task, 3 models, compare
-- [ ] day-23 — Hand-rolled mini-eval of your agent (Month 2 teaser)
-- [ ] day-24 — Ship it: agent repos to GitHub with honest READMEs
-- [ ] day-25 — Month review + all-flashcard review; sketch Month 2
-
-**After this month you should know:** how LLM APIs actually work (tokens,
-sampling, streaming, caching), how to build a tool-using agent from scratch in
-Python, enough TypeScript to call models comfortably, and the vocabulary of
-prompt and context engineering — with two documented repos on GitHub.
+**The old fundamentals are a library, not a march.** Tool-calling, the agent loop,
+Python idioms, async, pytest, the SDK — they live on *inside* the days above,
+pulled in the moment the build hits them.
