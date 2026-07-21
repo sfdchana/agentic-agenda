@@ -1,6 +1,6 @@
 # Day 06 — Chunk 0: Architecture tour (read + diagram your own pipeline)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** the shape of the eBay pipeline you already have — the pieces, how data flows, and where the boundaries are — well enough to redraw it from memory.
 
