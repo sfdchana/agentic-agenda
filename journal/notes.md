@@ -24,4 +24,16 @@ Analogy: temperature = how much you trust the rankings; top_p = how far down the
 streaming is basically when the llm shows the answer as it's ready like the typing effect. this way the latency appears quicker than it is because the user starts seeing the answer as it's ready instead of waiting for it all at once.
 
 July 20: Pydantic is a pythan library that validates the shape of your data and also checks that real data matches it.
-July 21:
+July 21: Looking at my existing ebay/data ingestion pipeline and answering some questions:
+Why does the normalizer exist at all — why not just store eBay's raw JSON?
+   * the normalizer is like a transformer, it exists to take raw, hard to read data from ebays response and parse it into categories and values that we build our system around and understand.
+* There are two eBay integrations. Which is alive, which is dead, and why does that matter?
+   * the finding api is dead, the browse api is alive. it matters because the finding api wont return anything it'll error out. The reason there's two is because i started with the finding and then kept erroring out and i reached out to ebay developers who said its been retired and replaced with browse api. future maintenance item is to deprecate the finding api from code.
+* Dedup is keyed on source_url — why that field and not, say, name or price?
+   * because it's a unique identifier and name or price are not, there can be many items with same names and prices.
+* What's the difference between passes() and score() — why have both?
+   * passes is whether it gets in the door as a data piece overall, score is the level it scores against everything else in the door once it's in.
+* Why does every new row land as status='pending' instead of going straight live?
+   * because we designed a human in a loop pattern and pending means that it's waiting for a human to decide.
+
+
