@@ -23,4 +23,5 @@ top_p = this is nucleus sampling which means it truncates the distribution by ch
 Analogy: temperature = how much you trust the rankings; top_p = how far down the rankings you're allowed to reach at all.
 streaming is basically when the llm shows the answer as it's ready like the typing effect. this way the latency appears quicker than it is because the user starts seeing the answer as it's ready instead of waiting for it all at once.
 
-July 20: 
+July 20: Pydantic is a pythan library that validates the shape of your data and also checks that real data matches it.
+July 21:
