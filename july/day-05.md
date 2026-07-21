@@ -1,6 +1,6 @@
 # Day 05 — Structured outputs (reliable JSON)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to make a model return JSON you can trust — validated with Pydantic.
 
