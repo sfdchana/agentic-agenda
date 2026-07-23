@@ -36,4 +36,7 @@ Why does the normalizer exist at all — why not just store eBay's raw JSON?
 * Why does every new row land as status='pending' instead of going straight live?
    * because we designed a human in a loop pattern and pending means that it's waiting for a human to decide.
 
-
+July 22: 1. What does client-credentials OAuth prove, and how is it different from "log in with Google"? it identifies itself as the client via api key and receives a bearer token which is then stashed until expiry. different because log in with google requires human interaction? and logs in on behalf on person vs this is machine.
+2. Why cache the token instead of fetching one per request? no need to fetch a new one each time since that would increase run time and latency, instead store token and only refetch if expired.
+3. Why expire it 60 seconds early? so that you shouldn't run into issues with a token that is valid when fetch but expired once sent. This way is more safe.
+4. In one sentence: why did eBay kill Finding in favor of Browse? browse api has a more modern rest security structure and finding api included the app id right in the query url.
