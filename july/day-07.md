@@ -1,6 +1,6 @@
 # Day 07 — Chunk 0: Defend it (Browse + OAuth vs the dead Finding API)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** *why* the two eBay integrations differ, and be able to defend every boundary out loud — the thing you couldn't do before.
 
