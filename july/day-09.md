@@ -1,6 +1,6 @@
 # Day 09 — Chunk 2: Fix the normalizer (Browse shape → items columns)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to map a messy external response to your own clean schema — the core skill of data engineering.
 
