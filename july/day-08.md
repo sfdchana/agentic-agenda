@@ -1,6 +1,6 @@
 # Day 08 — Chunk 1: Revive the pipeline on the Browse API
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to move working code from one place to another and prove it runs — one live eBay search printing real items.
 
