@@ -41,4 +41,4 @@ July 22: 1. What does client-credentials OAuth prove, and how is it different fr
 3. Why expire it 60 seconds early? so that you shouldn't run into issues with a token that is valid when fetch but expired once sent. This way is more safe.
 4. In one sentence: why did eBay kill Finding in favor of Browse? browse api has a more modern rest security structure and finding api included the app id right in the query url.
 July 23: Practiced running the call directly from a test script and saw the auth, headers, endpoint with token retreieved from cache or new and saw results.
-July 24:
+July 24: Testing the normalizer on the api call and seeing issues with trying to put a brand in a defined picklist and separating brand from entire title. 
