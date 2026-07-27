@@ -33,6 +33,34 @@ year: *Designing Data-Intensive Applications*, slowly. Home base stays **Python*
 **How detail works.** Monthly folders named for the month each starts in (months
 run ~mid-month to mid-month). December folds in holiday slack.
 
+**How the learning works — my style (revised).** My growth edge is *not* typing
+code — devs don't hand-write syntax anymore, and I'm already a strong engineer.
+The edge is **conceptual depth**: distributed systems, infra, high-level
+architecture, and a *genuine* understanding of how AI works (the kind the good
+Anthropic articles gave me). So each session leads with **reading + understanding
++ design/defend**, not "write it yourself and struggle." The projects still get
+built — I *direct and review* the code (AI writes the syntax), and the bar is that
+I can **architect it, explain it, and defend every boundary.** Depth over
+keystrokes. If a session ends in 15 min, it was too shallow — add a real reading
+or an architecture question, don't add busywork typing.
+
+**Reading spine (the depth track).** Woven into sessions, weighted heavier than
+before — this is where the "I really learned something" feeling lives:
+- **AI, genuinely understood** — Anthropic's *Building Effective Agents*, the
+  prompt/context-engineering guides, model + tool-use docs; then eval methodology,
+  how vector search/embeddings actually work, RAG internals, agent architectures.
+- **Distributed systems + data at scale** — *Designing Data-Intensive
+  Applications* (Kleppmann), slowly, all year — the spine of the infra lane.
+- **System design + capacity** — reason about RPS, latency, cost, failure,
+  boundaries; the cost-model / funnel / judge-once thinking from the eBay build.
+- **Infra + architecture** — hosting, containers, queues/workers, caching,
+  rate limits — understood well enough to *design and defend*, not just run.
+
+**Cadence stays sustainable.** Weekday ~1hr sessions, that's the plan and the
+whole assumption. **No weekend track is scheduled** — if I have extra weekend time
+I'll spend it on architecture/reading by choice, but the plan must survive on
+weekdays alone. Don't bake weekends in.
+
 ---
 
 ## Parallel track — at work (runs continuously)
