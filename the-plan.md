@@ -100,6 +100,30 @@ and justify every choice. Reading rides *alongside* each chunk, not front-loaded
 Months 3–5 below then deepen this *same* product (LangGraph classification, evals
 on my own corrections, pgvector "find similar"). Same spine, more layers.
 
+**Cost model — the capacity decision (own the limits).** "Free" API ≠ unlimited.
+Three real costs: (1) **eBay rate limits** — a daily call quota; exceed it → `429`
+and the pipeline stalls (the Salesforce governor-limit analog, but enforced by
+eBay, not caught at compile time). (2) **My host's compute** — every call runs on
+Railway; I pay for the CPU/memory/bandwidth it burns. (3) **The LLM $** — the real
+bill: every vision classification is a per-token charge, so classifying junk is
+just lighting money on fire. The two design moves that follow:
+- **The funnel** — cheap-wide eBay retrieval → cheap filter → the expensive step
+  (LLM, item-detail/aspects call) runs *only* on the few survivors, never on junk.
+- **Judge once, cache forever** — classify each item exactly once, store the taste
+  read keyed on `source_url`; re-runs reuse it. Never pay twice for the same piece.
+Plus: throttle between calls (stay under quota, Day 16), fetch only what's needed,
+schedule instead of burst, and monitor spend/call-counts (Month 4 observability).
+The one-liner I should be able to defend: *funnel the calls, and judge-once-cache
+the results — because in the open world the limits are mine to predict, not the
+platform's to hand me.*
+
+**Enrichment split (Chunk 3, learned Day 09).** eBay gives the **facts** for free —
+`localizedAspects` returns structured Brand / Color / Material / Style, so no
+title-parsing and `extractBrand`'s hardcoded list is obsolete. The **LLM** gives the
+**taste** — base / subverted_by / magnitude / vibes / role — which no API has. So
+enrichment = map eBay aspects → the ontology tables (facts), then LLM reads
+aspects + image → the tension read (taste). Facts from eBay, taste from the model.
+
 **Daily shape (flipped for momentum).** The build is the spine — most of each
 session moves this product forward; fundamentals ride along when a chunk needs
 them (the `foundations.md` philosophy). Reading is attached to the chunk it
