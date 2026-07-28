@@ -16,6 +16,7 @@ July 15/Skipped to Day 18:
 * Techniques that would be applicable to me: I think giving claude prompts in the style of desired output would be good for structuring a taste profile so that I can control most of the copy and keep it to an editorial voice instead of it generating AI slop that's recognizable as non human.also research and information gathering
 
 July 16: ran my first anthropic api call from python: ! stop_reason is how the agent loop knows to stop
+
 July 17: 
 tempature = how random/deterministic the result is, 0 will be the same or similar and increased tempature inc
 max tokens = length cap, how long the answer can be
@@ -24,6 +25,7 @@ Analogy: temperature = how much you trust the rankings; top_p = how far down the
 streaming is basically when the llm shows the answer as it's ready like the typing effect. this way the latency appears quicker than it is because the user starts seeing the answer as it's ready instead of waiting for it all at once.
 
 July 20: Pydantic is a pythan library that validates the shape of your data and also checks that real data matches it.
+
 July 21: Looking at my existing ebay/data ingestion pipeline and answering some questions:
 Why does the normalizer exist at all — why not just store eBay's raw JSON?
    * the normalizer is like a transformer, it exists to take raw, hard to read data from ebays response and parse it into categories and values that we build our system around and understand.
@@ -40,5 +42,14 @@ July 22: 1. What does client-credentials OAuth prove, and how is it different fr
 2. Why cache the token instead of fetching one per request? no need to fetch a new one each time since that would increase run time and latency, instead store token and only refetch if expired.
 3. Why expire it 60 seconds early? so that you shouldn't run into issues with a token that is valid when fetch but expired once sent. This way is more safe.
 4. In one sentence: why did eBay kill Finding in favor of Browse? browse api has a more modern rest security structure and finding api included the app id right in the query url.
+
 July 23: Practiced running the call directly from a test script and saw the auth, headers, endpoint with token retreieved from cache or new and saw results.
+
 July 24: Testing the normalizer on the api call and seeing issues with trying to put a brand in a defined picklist and separating brand from entire title. 
+
+July 27: Idempotency, distributed system failure, and guardrails to protect in the event of different types of failure:
+* idempotency key: the reason why this makes failures that could occur safe is because this is a unique id that is passed with every transaction so to say, and that is unique so if it knows if it's a duplicate means it's processed and shouldn't be processed again if it's not it isn't. 
+* exponential backoff: if a system is continously down the and the client keeps trying backoff is a way of waiting exponentially longer between each try (i.e. 1, 2, 4 seconds) to give the system time to recover. Capping retries is another safegaurd that protects additional damage caused by further retries to a broken system.
+* thundering herd problem: when a server is down, we anticipate that once its back up the retries will come in from the client all at once. Therefore assigning randomness or jitter to client requests allows breathing time in between so the server can recover instead of all the retries coming at once.
+
+July 28:
