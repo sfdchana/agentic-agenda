@@ -1,16 +1,21 @@
-# Day 17 — Deepen: run ingestion on a schedule
+# Day 17 — Deepen: run ingestion on a schedule (workers)
 
 - [ ] Done
 
-**After this you should know:** how a pipeline goes from "I run it by hand" to "it runs itself" — the archive filling on its own.
+**After this you should know:** how a pipeline goes from "I run it by hand" to "it runs itself," and why background work lives off the request path.
 
-## Do (~1 hr)
-Make `run.js` runnable on a schedule: a cron entry, a `node-cron` loop, or a Railway scheduled job. Have it run the search config every N hours and log what it added. Confirm a scheduled run produces new rows (and dedup keeps it clean). *(This is the async/worker fundamental, applied.)*
-Analogy: a Scheduled Apex job — but you own the scheduler and the runtime.
+## 📖 Read first (~20 min)
+An intro to **background jobs / message queues** — search "why use a message queue" or read the job-scheduling section of a backend primer. Get: why you move slow work *off* the user's request, and the difference between **scheduled** (cron) and **queued** (on-demand) work.
+
+## Do (~30 min) — direct it, don't grind it
+Make `run.js` runnable on a schedule (cron, `node-cron`, or a Railway scheduled job). Have it run the search config every N hours and log what it added. Confirm a scheduled run adds new rows and dedup keeps it clean.
+
+## Understand & defend (~10 min, journal it)
+Why does a *scheduled* pipeline absolutely need the idempotency from Day 10? Where would this run in production, and what could break overnight while you sleep?
 
 ## 3 flashcard ideas
-- What turns a script into a scheduled worker?
-- Why does a scheduled pipeline *need* idempotency (Day 10) to be safe?
-- Where would this run in production, and what could break overnight?
+- what turns a script into a scheduled worker?
+- scheduled vs queued work — the difference?
+- why does scheduling *require* idempotency?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: what "it runs itself" changes about how you think about the system._

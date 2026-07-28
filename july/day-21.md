@@ -1,16 +1,21 @@
-# Day 21 — Product: "my taste as data" — sketch the taste-profile model
+# Day 21 — Product: "my taste as data" — the taste-profile model
 
 - [ ] Done
 
-**After this you should know:** what a "taste profile" actually *is* as data — the thing the discovery layer ranks against.
+**After this you should know:** what a "taste profile" *is* as data — the thing the discovery layer ranks against — and the two ways systems model preference.
 
-## Do (~1 hr)
-Design, don't build. On paper: what defines a taste profile? A weighting over roles/eras/vibes? A set of exemplar pieces? Start with *your* taste as the single profile. Sketch the schema (a `taste_profile` shape) and how a piece's classification would score against it. Decide the smallest version worth building later. This is the seed of the "maybe users build their own profile" idea.
-Analogy: modeling a new object + its relationship to `items` — get the data model right before any UI.
+## 📖 Read first (~20 min)
+A recsys primer on **content-based vs collaborative filtering** (Eugene Yan, eugeneyan.com, or a clear intro). Get: content-based models the *item's attributes* (your tension read), collaborative models *behavior* (who liked what). Yours starts content-based.
+
+## Do (~30 min) — direct it, don't grind it
+Design, don't build. On paper: what defines a taste profile? A weighting over roles/eras/vibes? A set of exemplar pieces? Start with *your* taste as the one profile. Sketch a `taste_profile` shape and how a piece's classification scores against it.
+
+## Understand & defend (~10 min, journal it)
+Content-based vs collaborative — which fits you *now*, and why? What's the smallest version of a taste profile actually worth building first?
 
 ## 3 flashcard ideas
-- What is a taste profile, represented as data?
-- How would you score a piece's fit against a profile?
-- Why start with one profile (yours) instead of user profiles?
+- content-based vs collaborative filtering?
+- what is a taste profile, as data?
+- how would a piece score against a profile?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the first attribute you'd put in your own taste profile._

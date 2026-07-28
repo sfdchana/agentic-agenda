@@ -2,15 +2,20 @@
 
 - [ ] Done
 
-**After this you should know:** how to turn a taste read into an ordering — the thing that actually cuts through the chaos of thousands of listings.
+**After this you should know:** the difference between *filtering* and *ranking*, and how a taste read becomes an ordering — the thing that actually cuts through thousands of listings.
 
-## Do (~1 hr)
-Look at the existing `rules.js` `score()`. Extend the scoring so the **taste read** (from Day 11) drives ranking — e.g. reward items whose classification matches the taste you're curating for, not just cheap ones. Sort results by this taste score. Eyeball the top 10: are they the *right kind of thing*? Note where it's wrong.
-Analogy: this is your "assignment/priority rules," but the signal is taste, not a static field.
+## 📖 Read first (~20 min)
+A recsys/relevance primer — Eugene Yan's *"System Design for Recommendations"* (eugeneyan.com) or any solid **retrieval-vs-ranking** explainer. Get: retrieval casts a wide net, **ranking orders the survivors by relevance**, and ranking is driven by *signals*. Your taste read is a signal.
+
+## Do (~35 min) — direct it, don't grind it
+Look at `rules.js` `score()`. Extend the scoring so the **taste read** drives the order — reward pieces whose classification matches the taste you're curating for, not just cheap ones. Sort, then eyeball the top 10: right *kind* of thing? Note where it's wrong.
+
+## Understand & defend (~5 min, journal it)
+Filtering vs ranking — why do you need both? Which signal *should* dominate the ranking for taste, and what happens if price dominates instead?
 
 ## 3 flashcard ideas
-- What's the difference between filtering and ranking?
-- What signal drives the ranking now, vs. before?
-- Why is "sorted by taste fit" the core of the product?
+- filtering vs ranking — the difference?
+- what is a "ranking signal," and what's yours?
+- why is "sorted by taste fit" the core of the product?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: a piece the taste-ranking surfaced that price-ranking would have buried._

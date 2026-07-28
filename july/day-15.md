@@ -2,15 +2,20 @@
 
 - [ ] Done
 
-**After this you should know:** how to connect a frontend to your own API and render real, taste-ranked data — the first end-to-end slice of the product, live on your site.
+**After this you should know:** how a frontend talks to your own API, and why every data fetch has three states you must handle — the first end-to-end slice, live on your site.
 
-## Do (~1 hr)
-Swap the fake data in yesterday's grid for a real `fetch` to your API (the taste-ranked results endpoint). Handle the three states: loading, empty, error. Confirm real eBay pieces, ordered by taste, render on houseofsof.com.
-Analogy: binding a component to a real data source + handling the not-loaded states — same discipline as an LWC wire, done by hand.
+## 📖 Read first (~20 min)
+A piece on the **loading / empty / error** UI states (search "the three states of a data fetch" or an article on UI states) plus a short **REST API design** primer. Get: the *client-server contract* — the frontend asks, the backend answers, and you must design for the answer not arriving.
+
+## Do (~35 min) — direct it, don't grind it
+Swap the fake data for a real `fetch` to your taste-ranked endpoint. Handle loading, empty, and error explicitly. Confirm real eBay pieces, ordered by taste, render on houseofsof.com.
+
+## Understand & defend (~5 min, journal it)
+Why are the *empty* and *error* states as important as the happy path? What does the user see for each if you skip them?
 
 ## 3 flashcard ideas
-- The three UI states every data fetch must handle.
-- How does the frontend get taste-ranked results from the backend?
-- What's now true end-to-end that wasn't at the start of the month?
+- the three states every data fetch must handle?
+- what is the client-server "contract"?
+- what's now true end-to-end that wasn't at month's start?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the first time real, taste-ranked pieces rendered on your own site._

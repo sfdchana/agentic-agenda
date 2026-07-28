@@ -2,15 +2,20 @@
 
 - [ ] Done
 
-**After this you should know:** what idempotency means and why running the same pipeline twice must not create duplicate rows — real rows flowing into Postgres again.
+**After this you should know:** what idempotency *really* means and why a re-runnable pipeline is a hard requirement, not a nicety — with real rows landing in Postgres, safely.
 
-## Do (~1 hr)
-Run the full `pipeline/run.js` against the Browse scraper + fixed normalizer. Watch items get fetched → normalized → filtered → inserted. Then **run it again** and confirm the dedup check (`SELECT id FROM items WHERE source_url = $1`) skips everything — no duplicates. That "safe to re-run" property is **idempotency**.
-Analogy: like guarding an integration against reprocessing the same record — upsert semantics, not blind insert.
+## 📖 Read first (~20 min)
+Stripe's idempotency writeup — *"Designing robust and predictable APIs with idempotency"* (stripe.com/blog) or their idempotency docs. Pull out the core idea: **at-least-once vs exactly-once**, and how an *idempotency key* makes a retry safe. Then map it home: `source_url` **is** your idempotency key.
+
+## Do (~35 min) — direct it, don't grind it
+Run `run.js` end-to-end against the Browse scraper + fixed normalizer; watch rows land in `items`. Then run it **again** and confirm the dedup check skips everything. The win is *seeing idempotency hold*, not typing loops — you're directing the wiring and verifying the property.
+
+## Understand & defend (~5 min, journal it)
+If two runs overlap, or one crashes halfway, why does keying on `source_url` still keep the table clean? What breaks if you key on `name` instead?
 
 ## 3 flashcard ideas
-- What does idempotent mean, and why does a pipeline need it?
-- What field is dedup keyed on here, and why that one?
-- What's the difference between insert and upsert?
+- at-least-once vs exactly-once — the difference?
+- what is an idempotency key, and what's yours?
+- insert vs upsert — when does each matter?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the moment a second run added zero dupes — why that property matters at scale._

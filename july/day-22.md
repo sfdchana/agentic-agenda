@@ -1,16 +1,21 @@
-# Day 22 — Deepen: cost + context awareness on batch classify
+# Day 22 — Deepen: cost + context on batch classify
 
 - [ ] Done
 
-**After this you should know:** what it costs to classify at scale, and the levers (model choice, caching, prompt size) that control it.
+**After this you should know:** what it costs to classify at scale, and the levers — model choice, caching, prompt size — that control it. Capacity thinking, made concrete.
 
-## Do (~1 hr)
-Classify a batch (say 50 items) and measure: tokens in/out, total cost, latency. Try one lever — a cheaper model (Haiku) on the same task, or a cached system prompt — and compare quality vs. cost. Decide what you'd actually ship. *(Model-landscape + caching fundamentals, made concrete on your data.)*
-Analogy: the governor-limit instinct, but *you* set the budget now — cost is the limit you design for.
+## 📖 Read first (~20 min)
+Anthropic **prompt caching** docs (docs.anthropic.com) + a short piece on **token economics / cost optimization**. Get: what caching actually caches, when it helps, and the cost/latency/quality tradeoff across model sizes (Haiku ↔ Sonnet ↔ Opus).
+
+## Do (~30 min) — direct it, don't grind it
+Classify a batch (~50 items) and measure: tokens in/out, total cost, latency. Try one lever — a cheaper model on the same task, or a cached system prompt — and compare quality vs cost. Decide what you'd ship.
+
+## Understand & defend (~10 min, journal it)
+The cost/latency/quality triangle — where does your taste judge sit, and why? When would a *smaller* model beat a bigger one here?
 
 ## 3 flashcard ideas
-- The cost / latency / quality triangle — pick-two in practice.
-- When does a smaller model beat a bigger one for classification?
-- What does prompt caching cache, and when does it help?
+- what does prompt caching cache, and when does it help?
+- the cost/latency/quality triangle — pick-two in practice?
+- when does a smaller model win?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the real per-item cost of a taste read, and whether it surprised you._

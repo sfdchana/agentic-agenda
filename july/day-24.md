@@ -2,15 +2,20 @@
 
 - [ ] Done
 
-**After this you should know:** the discovery view looks finished — responsive, with real loading/empty/error states — the "beautiful" the product promised.
+**After this you should know:** how to take the discovery view from "works in the demo" to "I'd show a hiring manager" — responsive, with intentional states.
 
-## Do (~1 hr)
-Downtime-friendly polish (Claude Design welcome). Make the grid responsive (mobile → desktop), refine spacing/type to match the houseofsof aesthetic, and make the loading/empty/error states feel intentional, not broken. Small delight: a taste tag, a hover, a clean empty state.
-Analogy: the difference between "it works in the demo" and "I'd show this to a hiring manager."
+## 📖 Read first (~15 min)
+A short **mobile-first / responsive design** piece (a *Refactoring UI* section or MDN's responsive basics). Get: mobile-first thinking, breakpoints, and why the *empty* and *error* states deserve real design, not an afterthought.
+
+## Do (~35 min) — direct it, don't grind it
+Make the grid responsive (mobile → desktop), refine spacing/type to match the houseofsof aesthetic, and make loading/empty/error feel intentional. Claude Design welcome — this is the downtime-friendly polish lane.
+
+## Understand & defend (~5 min, journal it)
+What separates a *finished* UI from a merely *working* one? Name one detail that makes results feel curated.
 
 ## 3 flashcard ideas
-- What separates a finished UI from a working one?
-- Why do empty/error states matter as much as the happy path?
-- One detail that makes results feel curated.
+- what makes a UI feel finished vs working?
+- why do empty/error states deserve design?
+- one detail that makes a grid feel curated.
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the detail you added that you're actually proud of._

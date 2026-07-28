@@ -1,16 +1,21 @@
-# Day 20 — Deepen: test the normalizer (pytest + type hints)
+# Day 20 — Deepen: testing strategy (what to test, and why)
 
 - [ ] Done
 
-**After this you should know:** how to test the riskiest part of the pipeline — the mapping — so a changed API field can't silently break ingestion.
+**After this you should know:** *where* tests earn their keep — the risky boundaries — so a changed API field can't silently break ingestion. Strategy over coverage.
 
-## Do (~1 hr)
-The normalizer is where external chaos meets your schema, so it's the highest-value thing to test. Add type hints to the classify/normalize functions, then write tests: given a saved sample Browse item, assert the normalized object has the right fields and types. Feed it a *malformed* item and assert it fails loudly, not silently. *(pytest fundamental, applied to real code.)*
-Analogy: Apex test methods — but local, fast, and run on every change.
+## 📖 Read first (~20 min)
+Martin Fowler — *"The Practical Test Pyramid"* (martinfowler.com). Get: many fast unit tests, few slow end-to-end ones, and **test the risky boundaries** rather than chasing a coverage number.
+
+## Do (~30 min) — direct it, don't grind it
+The normalizer is where external chaos meets your schema — the highest-value thing to test. Direct a couple of tests: given a saved sample Browse item, assert the normalized object has the right fields/types; feed a *malformed* item, assert it fails loudly not silently. Decide *what* to assert; let the syntax be assisted.
+
+## Understand & defend (~10 min, journal it)
+Why is the normalizer the highest-value thing to test in this whole system? What's a test that would have caught the `brand: null` bug you already hit?
 
 ## 3 flashcard ideas
-- Why is the normalizer the highest-value thing to test?
-- What does a good test assert about a mapped object?
-- What do type hints buy you if they don't enforce at runtime?
+- why test the boundary, not everything equally?
+- what should a normalizer test actually assert?
+- unit vs end-to-end — when each?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: the one test you'd write first, and what it protects._

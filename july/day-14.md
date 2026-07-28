@@ -2,15 +2,20 @@
 
 - [ ] Done
 
-**After this you should know:** how to design a clean discovery surface for the taste-ranked results — the beautiful front the whole product is for.
+**After this you should know:** how to design a clean discovery surface for taste-ranked results — the beautiful front the whole product is for.
 
-## Do (~1 hr)
-The fun, downtime-friendly one. In Claude Design (or straight in the site's HTML/CSS), lay out a **discovery view**: a grid of taste-ranked pieces — image, name, brand, price, and a small taste tag (role/vibe). Build it *static first* with fake data so you nail the look before wiring real data. Match the houseofsof aesthetic.
-Analogy: mock the Lightning page before binding the data — layout first, plumbing second.
+## 📖 Read first (~20 min)
+*Refactoring UI* (refactoringui.com) — skim the free ideas on **visual hierarchy, spacing, and starting with too much whitespace**. Get: what makes a grid read as *curated* instead of cluttered, and why hierarchy (not decoration) does the work.
+
+## Do (~35 min) — direct it, don't grind it
+Lay out a **discovery view**: a grid of taste-ranked pieces — image, name, brand, price, a small taste tag. Build it *static-first with fake data* so you nail the look before wiring anything. Direct the layout; use Claude Design if it's faster.
+
+## Understand & defend (~5 min, journal it)
+What's the ONE thing each card must communicate at a glance? Name two choices that make the grid feel curated rather than noisy.
 
 ## 3 flashcard ideas
-- Why build the UI static-with-fake-data before wiring the API?
-- What are the few fields a discovery card actually needs?
-- What makes a results grid feel curated vs. noisy?
+- why build the UI static-with-fake-data first?
+- what few fields does a discovery card actually need?
+- hierarchy vs decoration — which makes a UI feel designed?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: one layout choice that made it suddenly look "real."_

@@ -1,16 +1,21 @@
-# Day 11 — Chunk 3: Wire the Day-5 classifier onto incoming items
+# Day 11 — Chunk 3: Wire the taste judge onto incoming items
 
 - [ ] Done
 
-**After this you should know:** how to put your structured-output classifier (Day 5) onto real ingested data — AI *on* clean data, the whole thesis.
+**After this you should know:** how to put a structured LLM classification onto real ingested data — AI *on* clean data, the whole thesis — and why classification is a controlled call, not a chat.
 
-## Do (~1 hr)
-Take the Pydantic-style classify step from Day 5 and call it inside the pipeline (or as a follow-up pass) on each new `items` row: send the item's name/brand/description, get back a validated taste read (role / era / magnitude / vibes), and store it on the row. Start small — classify 5 real items, print machine output next to the listing.
-Analogy: the "AI second, clean data first" rule — you only classify *after* ingestion has given you tidy rows.
+## 📖 Read first (~20 min)
+Anthropic — *Building Effective Agents* (anthropic.com/engineering/building-effective-agents). Focus on the **augmented LLM** and **when a workflow beats an agent**. Your taste judge is a *workflow step* (classify → validate → store), not an open-ended agent — read enough to know *why* that distinction matters.
+
+## Do (~35 min) — direct it, don't grind it
+Take the Day-5 structured-output call and point it at new `items` rows: send name/aspects (+ image later), get back a validated taste read, store it. Classify ~5 real items and eyeball the machine's read next to the listing. You're wiring a known pattern onto real data.
+
+## Understand & defend (~5 min, journal it)
+Why classify *after* ingestion instead of during the eBay fetch? Why validate the model's output even when it "looks" right?
 
 ## 3 flashcard ideas
-- Why classify *after* ingestion, not during the API fetch?
-- What makes the classifier's output safe to store (vs. raw model text)?
-- Where does the taste read live — same table or a new one?
+- why is the taste judge a workflow step, not an agent?
+- why classify after ingestion, not during the fetch?
+- what makes the output safe to store (vs raw model text)?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: where the machine's read matched your eye — and where it didn't._

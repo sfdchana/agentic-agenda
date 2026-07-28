@@ -4,13 +4,18 @@
 
 **After this you should know:** Month 1's real deliverable — a working taste-discovery slice — is documented, demoable, and defensible; and you know what Month 2 deepens.
 
-## Do (~1 hr)
-Write the README for the taste-discovery build: what it does, the architecture (from Day 23), the honest limitations, and cost notes. Record a 60-second screen demo (ingest → classify → ranked results on the site). Full flashcard review; reread the journal; write 5 lines on what stuck vs. what's shaky and one open question for Month 2.
-Analogy: the close-out doc + demo that proves you *shipped and can defend it* — the whole point of the month.
+## 📖 Read (re-read, ~20 min)
+Consolidate: re-read the two articles that landed hardest this month, plus a skim of Anthropic's *Building Effective Agents* as a capstone. Notice how much more of it makes sense now than in Week 1.
+
+## Do (~35 min) — direct it, don't grind it
+Write the README for the taste-discovery build: what it does, the architecture (from Day 23), honest limitations, cost notes. Record a 60-second screen demo (ingest → classify → ranked results). Then: flashcard review + reread your journal.
+
+## Understand & defend (~5 min, journal it)
+Write 5 lines: weakest area this month, strongest, and one open question you're carrying into Month 2.
 
 ## 3 flashcard ideas
-- (Review day.) Your weakest area this month, and your strongest.
-- The one-line pitch of the taste-discovery product.
-- One open question to carry into Month 2.
+- (review day) your weakest and strongest area this month.
+- the one-line pitch of the taste-discovery product.
+- one open question for Month 2.
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: what "I really learned something" felt like this month, vs the 15-minute days._

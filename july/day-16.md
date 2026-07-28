@@ -1,16 +1,21 @@
-# Day 16 — Deepen: reliability (rate limiting, retries/backoff on Browse)
+# Day 16 — Deepen: reliability (rate limits, retries, backoff)
 
 - [ ] Done
 
-**After this you should know:** how to make the eBay calls survive the real world — rate limits and transient failures — instead of falling over.
+**After this you should know:** how to make eBay calls survive the real world — rate limits and transient failures — instead of falling over. Core infra-lane skill.
 
-## Do (~1 hr)
-The Browse API has rate limits and will occasionally fail. Add: a small delay between search calls, and a retry-with-backoff around the fetch (try, wait, try again, then give up). Log when a retry fires. *(This is where the old "error handling — retries, giving up" fundamental lands, applied to real API calls.)*
-Analogy: a retry policy on a callout — but you own the policy and the backoff now.
+## 📖 Read first (~20 min)
+AWS Builders' Library — *"Timeouts, retries, and backoff with jitter"* (aws.amazon.com/builders-library). This is canonical. Get: **exponential backoff**, why you add **jitter**, what a **retry storm** is, and when to stop retrying and fail.
+
+## Do (~30 min) — direct it, don't grind it
+Add to the Browse calls: a small delay between searches, and a **retry-with-backoff** around each fetch (try → wait longer each time → give up after N). Log when a retry fires. Direct the resilience logic; understand each knob.
+
+## Understand & defend (~10 min, journal it)
+Why does retrying *immediately* make an overloaded API worse? What does jitter prevent? Why cap the retries at all?
 
 ## 3 flashcard ideas
-- What is exponential backoff and why not just retry immediately?
-- Three failure modes an API client must handle.
-- When do you stop retrying and give up?
+- what is exponential backoff, and why not retry instantly?
+- what is jitter, and what problem does it solve?
+- when do you stop retrying and fail?
 
-_Last 2 min: a line in ../journal/ (log / question / idea). Prefix a-ha lines with `!`._
+_Journal: which failure mode you hadn't considered before reading this._
