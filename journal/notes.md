@@ -55,3 +55,5 @@ July 27: Idempotency, distributed system failure, and guardrails to protect in t
 July 28:
 - a workflow beats an agent when a pre-identified set of tasks will always be applicable
 - the augmented llm is basically the building blocks of all llm agents/workflows  - retrieval (pull context), tools(which functions), memory(carry information across steps).
+- The principle: anywhere untrusted data enters your system — API responses, user input, and especially LLM output - validate at the door. In Python you'd use Pydantic: parse, then assert the object matches the taste schema, and flag/reject if not. Even when it "looks right," validation is the difference between "the model was wrong and I caught it instantly" and "the model was wrong and I found out when the portal broke."
+
