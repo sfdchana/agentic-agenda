@@ -1,21 +1,21 @@
-# Day 20 — Deepen: testing strategy (what to test, and why)
+# Day 20 — Portal II: capture your corrections (the dataset)
 
 - [ ] Done
 
-**After this you should know:** *where* tests earn their keep — the risky boundaries — so a changed API field can't silently break ingestion. Strategy over coverage.
+**After this you should know:** how human-in-the-loop corrections become a labeled dataset — the thing that makes the whole system *yours*.
 
-## 📖 Read first (~20 min)
-Martin Fowler — *"The Practical Test Pyramid"* (martinfowler.com). Get: many fast unit tests, few slow end-to-end ones, and **test the risky boundaries** rather than chasing a coverage number.
+## 📖 Read (~20 min)
+Martin Fowler — *"The Practical Test Pyramid"* (martinfowler.com/articles/practical-test-pyramid.html). Get: test the risky boundaries; strategy over coverage.
 
-## Do (~30 min) — direct it, don't grind it
-The normalizer is where external chaos meets your schema — the highest-value thing to test. Direct a couple of tests: given a saved sample Browse item, assert the normalized object has the right fields/types; feed a *malformed* item, assert it fails loudly not silently. Decide *what* to assert; let the syntax be assisted.
+## 🛠️ Build (~20 min) — taste-map project
+Add controls in admin to **accept or edit** a taste read — fix an axis score, correct `base`/`subverted_by` — and save it as ground truth (a corrections record). Every edit is one labeled example of your eye.
 
-## Understand & defend (~10 min, journal it)
-Why is the normalizer the highest-value thing to test in this whole system? What's a test that would have caught the `brand: null` bug you already hit?
+## Understand & defend (~5 min, journal)
+How does a correction become training/eval data? Why is *disagreement* the valuable signal, not agreement?
 
 ## 3 flashcard ideas
-- why test the boundary, not everything equally?
-- what should a normalizer test actually assert?
-- unit vs end-to-end — when each?
+- what is the human-in-the-loop "loop"?
+- how does a correction become a dataset?
+- why is disagreement the signal?
 
-_Journal: the one test you'd write first, and what it protects._
+_Journal: a correction you made and what it taught you about your own taste._

@@ -1,21 +1,21 @@
-# Day 25 — Month-1 wrap: README + demo; what shipped
+# Day 25 — Wrap: README + demo of the taste-map project
 
 - [ ] Done
 
-**After this you should know:** Month 1's real deliverable — a working taste-discovery slice — is documented, demoable, and defensible; and you know what Month 2 deepens.
+**After this you should know:** the taste-map project is documented, demoable, and defensible — and you know what Month 2 deepens.
 
 ## 📖 Read (re-read, ~20 min)
-Consolidate: re-read the two articles that landed hardest this month, plus a skim of Anthropic's *Building Effective Agents* as a capstone. Notice how much more of it makes sense now than in Week 1.
+Re-read the two articles that landed hardest this month + a skim of Anthropic's *Building Effective Agents*. Notice how much more of it makes sense now than in Week 1.
 
-## Do (~35 min) — direct it, don't grind it
-Write the README for the taste-discovery build: what it does, the architecture (from Day 23), honest limitations, cost notes. Record a 60-second screen demo (ingest → classify → ranked results). Then: flashcard review + reread your journal.
+## 🛠️ Build (~20 min) — taste-map project
+Write the README: what the taste map is, the schema (axes + objects), how the vision judge scores axes, and the map view. Record a 60-second demo (item → scored → placed on the map). Then flashcard review + reread your journal.
 
-## Understand & defend (~5 min, journal it)
-Write 5 lines: weakest area this month, strongest, and one open question you're carrying into Month 2.
+## Understand & defend (~5 min, journal)
+Write 5 lines: weakest area this month, strongest, and one open question for Month 2.
 
 ## 3 flashcard ideas
-- (review day) your weakest and strongest area this month.
-- the one-line pitch of the taste-discovery product.
-- one open question for Month 2.
+- (review) weakest + strongest area this month?
+- the one-line pitch of the taste-map project?
+- one open question for Month 2?
 
-_Journal: what "I really learned something" felt like this month, vs the 15-minute days._
+_Journal: what "I really learned something" felt like this month — the reading + the build, side by side._

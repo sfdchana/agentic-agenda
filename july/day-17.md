@@ -1,21 +1,21 @@
-# Day 17 — Deepen: run ingestion on a schedule (workers)
+# Day 17 — Data III: auto-score items on the axes
 
 - [ ] Done
 
-**After this you should know:** how a pipeline goes from "I run it by hand" to "it runs itself," and why background work lives off the request path.
+**After this you should know:** how the vision judge turns your axes into real scores on real items — the machine positioning pieces on your map.
 
-## 📖 Read first (~20 min)
-An intro to **background jobs / message queues** — search "why use a message queue" or read the job-scheduling section of a backend primer. Get: why you move slow work *off* the user's request, and the difference between **scheduled** (cron) and **queued** (on-demand) work.
+## 📖 Read (~20 min)
+An intro to **background jobs / message queues** ("why use a message queue"). Get: move slow work off the request path; scheduled vs queued.
 
-## Do (~30 min) — direct it, don't grind it
-Make `run.js` runnable on a schedule (cron, `node-cron`, or a Railway scheduled job). Have it run the search config every N hours and log what it added. Confirm a scheduled run adds new rows and dedup keeps it clean.
+## 🛠️ Build (~20 min) — taste-map project
+Extend `classify-items.js` so the vision judge outputs a **score per axis** (`feminine: 0.8`, `edgy: 0.3`…) and stores them in `item_axis_scores`. Run on ~10 items. Now real pieces have coordinates.
 
-## Understand & defend (~10 min, journal it)
-Why does a *scheduled* pipeline absolutely need the idempotency from Day 10? Where would this run in production, and what could break overnight while you sleep?
+## Understand & defend (~5 min, journal)
+Why store the scores (judge-once) instead of recomputing them every time you draw the map? (Tie to cost.)
 
 ## 3 flashcard ideas
-- what turns a script into a scheduled worker?
-- scheduled vs queued work — the difference?
-- why does scheduling *require* idempotency?
+- how does the judge produce a 0–1 axis score?
+- why cache the scores in a table?
+- scheduled vs queued work?
 
-_Journal: what "it runs itself" changes about how you think about the system._
+_Journal: one item's axis scores vs. your own read of it._

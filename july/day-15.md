@@ -1,21 +1,21 @@
-# Day 15 — Chunk 4: Wire UI → API (taste-ranked results, live)
+# Day 15 — Data I: seed designers on the axes (your ground truth)
 
 - [ ] Done
 
-**After this you should know:** how a frontend talks to your own API, and why every data fetch has three states you must handle — the first end-to-end slice, live on your site.
+**After this you should know:** how hand-labeled ground truth anchors a taste model — before any AI touches it.
 
-## 📖 Read first (~20 min)
-A piece on the **loading / empty / error** UI states (search "the three states of a data fetch" or an article on UI states) plus a short **REST API design** primer. Get: the *client-server contract* — the frontend asks, the backend answers, and you must design for the answer not arriving.
+## 📖 Read (~20 min)
+The **three data-fetch states** (loading / empty / error) + a short REST API primer. Get: the client-server contract, design for the answer not arriving.
 
-## Do (~35 min) — direct it, don't grind it
-Swap the fake data for a real `fetch` to your taste-ranked endpoint. Handle loading, empty, and error explicitly. Confirm real eBay pieces, ordered by taste, render on houseofsof.com.
+## 🛠️ Build (~20 min) — taste-map project
+Insert ~8–12 designers and **place each on your axes** — where's Rodarte on `feminine ↔ edgy`? Margiela on `structured ↔ fluid`? These are *your* calls. This is your **ground truth**: it defines what the axes actually mean and becomes your calibration anchor.
 
-## Understand & defend (~5 min, journal it)
-Why are the *empty* and *error* states as important as the happy path? What does the user see for each if you skip them?
+## Understand & defend (~5 min, journal)
+Why place designers by hand *before* the model scores anything? What would go wrong if you let the model define the axes itself?
 
 ## 3 flashcard ideas
-- the three states every data fetch must handle?
-- what is the client-server "contract"?
-- what's now true end-to-end that wasn't at month's start?
+- what is "ground truth"?
+- why hand-seed calibration data?
+- how do anchors define an axis?
 
-_Journal: the first time real, taste-ranked pieces rendered on your own site._
+_Journal: 3 designer placements and the reasoning behind each._

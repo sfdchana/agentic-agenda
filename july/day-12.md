@@ -1,21 +1,21 @@
-# Day 12 — Chunk 3: Rank by taste *fit*, not price
+# Day 12 — Taste schema I: define the axes
 
 - [ ] Done
 
-**After this you should know:** the difference between *filtering* and *ranking*, and how a taste read becomes an ordering — the thing that actually cuts through thousands of listings.
+**After this you should know:** the continuous taste *dimensions* that become both your schema fields AND your map's axes — and why a spectrum captures what a category can't.
 
-## 📖 Read first (~20 min)
-A recsys/relevance primer — Eugene Yan's *"System Design for Recommendations"* (eugeneyan.com) or any solid **retrieval-vs-ranking** explainer. Get: retrieval casts a wide net, **ranking orders the survivors by relevance**, and ranking is driven by *signals*. Your taste read is a signal.
+## 📖 Read (~20 min)
+Eugene Yan — *"System Design for Recommendations"* (eugeneyan.com). Get: retrieval vs ranking, and that ranking runs on **signals**. Your axes are signals.
 
-## Do (~35 min) — direct it, don't grind it
-Look at `rules.js` `score()`. Extend the scoring so the **taste read** drives the order — reward pieces whose classification matches the taste you're curating for, not just cheap ones. Sort, then eyeball the top 10: right *kind* of thing? Note where it's wrong.
+## 🛠️ Build (~20 min) — taste-map project
+Audit the fields you already have (`items`, `tension`: base/subverter, `vibes`, `role`, `era`). Then define the **continuous axes** that capture *your* taste — e.g. `feminine ↔ edgy`, `structured ↔ fluid`, `quiet ↔ loud`, `tension low ↔ high`. **Pick 3–4.** Write each as a named field on a scale (0→1 or −1→+1). These are the spine of the whole project.
 
-## Understand & defend (~5 min, journal it)
-Filtering vs ranking — why do you need both? Which signal *should* dominate the ranking for taste, and what happens if price dominates instead?
+## Understand & defend (~5 min, journal)
+Why continuous axes instead of categorical buckets? What does "0.8 edgy" capture that a tag "edgy" can't?
 
 ## 3 flashcard ideas
-- filtering vs ranking — the difference?
-- what is a "ranking signal," and what's yours?
-- why is "sorted by taste fit" the core of the product?
+- categorical vs continuous field — the difference?
+- what is a "signal" in ranking?
+- which 3–4 axes are yours, and why?
 
-_Journal: a piece the taste-ranking surfaced that price-ranking would have buried._
+_Journal: the axes you locked, and the taste each one is trying to measure._

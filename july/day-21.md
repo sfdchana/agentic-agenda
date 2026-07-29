@@ -1,21 +1,21 @@
-# Day 21 — Product: "my taste as data" — the taste-profile model
+# Day 21 — Portal III: the taste-profile view
 
 - [ ] Done
 
-**After this you should know:** what a "taste profile" *is* as data — the thing the discovery layer ranks against — and the two ways systems model preference.
+**After this you should know:** what a "taste profile" looks like assembled from axis scores — your taste, as an aggregate.
 
-## 📖 Read first (~20 min)
-A recsys primer on **content-based vs collaborative filtering** (Eugene Yan, eugeneyan.com, or a clear intro). Get: content-based models the *item's attributes* (your tension read), collaborative models *behavior* (who liked what). Yours starts content-based.
+## 📖 Read (~20 min)
+A primer on **content-based vs collaborative filtering** (Eugene Yan or a clear intro). Get: content-based = item attributes (your axes); collaborative = behavior.
 
-## Do (~30 min) — direct it, don't grind it
-Design, don't build. On paper: what defines a taste profile? A weighting over roles/eras/vibes? A set of exemplar pieces? Start with *your* taste as the one profile. Sketch a `taste_profile` shape and how a piece's classification scores against it.
+## 🛠️ Build (~20 min) — taste-map project
+In admin, show an aggregate **taste-profile view** — how your archive distributes across the axes (where your taste clusters). Content-based, straight from `item_axis_scores`.
 
-## Understand & defend (~10 min, journal it)
-Content-based vs collaborative — which fits you *now*, and why? What's the smallest version of a taste profile actually worth building first?
+## Understand & defend (~5 min, journal)
+Content-based vs collaborative — which is this, and why does content-based fit you *now* (vs later)?
 
 ## 3 flashcard ideas
+- a taste profile, represented as data?
 - content-based vs collaborative filtering?
-- what is a taste profile, as data?
-- how would a piece score against a profile?
+- why content-based first?
 
-_Journal: the first attribute you'd put in your own taste profile._
+_Journal: where your taste clusters on the map — did it surprise you?_

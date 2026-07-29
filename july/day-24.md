@@ -1,21 +1,21 @@
-# Day 24 — Chunk 4: polish the discovery UI (responsive + states)
+# Day 24 — Frontend II: make it cute + responsive
 
 - [ ] Done
 
-**After this you should know:** how to take the discovery view from "works in the demo" to "I'd show a hiring manager" — responsive, with intentional states.
+**After this you should know:** how to take the taste map from working to *beautiful* and on-brand — the public-facing version.
 
-## 📖 Read first (~15 min)
-A short **mobile-first / responsive design** piece (a *Refactoring UI* section or MDN's responsive basics). Get: mobile-first thinking, breakpoints, and why the *empty* and *error* states deserve real design, not an afterthought.
+## 📖 Read (~15 min)
+A short **mobile-first / responsive** piece (a *Refactoring UI* section or MDN responsive basics). Get: mobile-first, breakpoints, intentional empty/error states.
 
-## Do (~35 min) — direct it, don't grind it
-Make the grid responsive (mobile → desktop), refine spacing/type to match the houseofsof aesthetic, and make loading/empty/error feel intentional. Claude Design welcome — this is the downtime-friendly polish lane.
+## 🛠️ Build (~20 min) — taste-map project
+Polish the taste map: your palette (bark / white / cherry / blush), clean photo-dots, hover states, responsive layout. This is the "make it cute" day — the version you'd put on the site.
 
-## Understand & defend (~5 min, journal it)
-What separates a *finished* UI from a merely *working* one? Name one detail that makes results feel curated.
+## Understand & defend (~5 min, journal)
+What makes the map feel *curated* rather than cluttered? What's the one detail that sells "taste as data"?
 
 ## 3 flashcard ideas
-- what makes a UI feel finished vs working?
-- why do empty/error states deserve design?
-- one detail that makes a grid feel curated.
+- finished vs working UI?
+- why mobile-first?
+- one detail that makes a viz feel intentional?
 
-_Journal: the detail you added that you're actually proud of._
+_Journal: the detail on the map you're actually proud of._

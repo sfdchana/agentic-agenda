@@ -1,21 +1,21 @@
-# Day 16 — Deepen: reliability (rate limits, retries, backoff)
+# Day 16 — Data II: taste-reference photos (anchor each pole)
 
 - [ ] Done
 
-**After this you should know:** how to make eBay calls survive the real world — rate limits and transient failures — instead of falling over. Core infra-lane skill.
+**After this you should know:** how *exemplar images* define a dimension better than a text label — your visual-first instinct, formalized.
 
-## 📖 Read first (~20 min)
-AWS Builders' Library — *"Timeouts, retries, and backoff with jitter"* (aws.amazon.com/builders-library). This is canonical. Get: **exponential backoff**, why you add **jitter**, what a **retry storm** is, and when to stop retrying and fail.
+## 📖 Read (~20 min)
+AWS Builders' Library — *"Timeouts, retries, and backoff with jitter"* (aws.amazon.com/builders-library). Get: exponential backoff, jitter, retry storms — you'll need this when the classifier hits eBay at volume.
 
-## Do (~30 min) — direct it, don't grind it
-Add to the Browse calls: a small delay between searches, and a **retry-with-backoff** around each fetch (try → wait longer each time → give up after N). Log when a retry fires. Direct the resilience logic; understand each knob.
+## 🛠️ Build (~20 min) — taste-map project
+Add a handful of **taste-reference photos** — the images that anchor each axis pole (a *very feminine* example, a *very edgy* one). Store their URLs against the axis/pole in `taste_references`. Photos as data — exactly your instinct.
 
-## Understand & defend (~10 min, journal it)
-Why does retrying *immediately* make an overloaded API worse? What does jitter prevent? Why cap the retries at all?
+## Understand & defend (~5 min, journal)
+Why does an exemplar image define an axis pole better than the word "edgy"? (Think about how the vision model *compares* against an anchor.)
 
 ## 3 flashcard ideas
-- what is exponential backoff, and why not retry instantly?
-- what is jitter, and what problem does it solve?
-- when do you stop retrying and fail?
+- what is an exemplar/anchor?
+- why images over words for a taste axis?
+- what problem does jitter solve? (from the read)
 
-_Journal: which failure mode you hadn't considered before reading this._
+_Journal: the two anchor images you chose for one axis, and why they're the poles._

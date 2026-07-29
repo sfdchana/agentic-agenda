@@ -1,21 +1,21 @@
-# Day 19 — Deepen: clean service architecture (structure, not syntax)
+# Day 19 — Portal I: show the taste read + photo in admin
 
 - [ ] Done
 
-**After this you should know:** how to structure a service so it's clean, deployable, and defensible — the architecture, not the keystrokes.
+**After this you should know:** how to surface model output next to the human, in the place the human already works.
 
-## 📖 Read first (~20 min)
-*The Twelve-Factor App* (12factor.net) — read **Config**, **Processes**, and **Dependencies**. Get: config in the environment (not the code), **stateless processes**, explicit dependencies — the principles that make a service easy to deploy and scale.
+## 📖 Read (~20 min)
+*The Twelve-Factor App* (12factor.net) — Config, Processes, Dependencies. Get: config in env, stateless processes — clean, deployable services.
 
-## Do (~30 min) — direct it, don't grind it
-Tidy the pipeline into clean modules and move any hardcoded config (keys, limits, search terms) into env/config. You're *directing* the cleanup and judging the boundaries — where does each responsibility belong? — not hand-writing idioms.
+## 🛠️ Build (~20 min) — taste-map project
+In `admin.html`, render each pending item's **taste read** (base / subverted_by / axis scores) **next to its photo**. This is the moment you can finally *see and judge* in your portal instead of the terminal.
 
-## Understand & defend (~10 min, journal it)
-Why keep config in the environment instead of the code? What does "stateless process" mean, and why does it matter the moment you want to run two copies?
+## Understand & defend (~5 min, journal)
+Why put the eval where the human already works, instead of a separate tool? (Adoption, context, friction.)
 
 ## 3 flashcard ideas
-- why config-in-env, not config-in-code?
-- what makes a process "stateless," and why care?
-- separation of concerns — what does each module own?
+- what makes a review UI effective?
+- why co-locate model output + the image?
+- what is a stateless process? (from the read)
 
-_Journal: one boundary you moved, and why it belongs where you put it._
+_Journal: first impression seeing the machine's reads land in your own portal._
