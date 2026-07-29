@@ -1,6 +1,6 @@
 # Notes — running log
 
-_One or two lines per session. Newest at the top._
+_One or two lines per session._
 
 July 13: agent = model owns the steps; workflow = I own the steps. There are various types of workflows that can be used if steps are known and an agent can be used when steps are uknown and need to be determined based on input which is also unkown.
 
@@ -43,7 +43,7 @@ July 22: 1. What does client-credentials OAuth prove, and how is it different fr
 3. Why expire it 60 seconds early? so that you shouldn't run into issues with a token that is valid when fetch but expired once sent. This way is more safe.
 4. In one sentence: why did eBay kill Finding in favor of Browse? browse api has a more modern rest security structure and finding api included the app id right in the query url.
 
-July 23: Practiced running the call directly from a test script and saw the auth, headers, endpoint with token retreieved from cache or new and saw results.
+July 23: Practiced running the call directly from a test script and saw the auth, headers, endpoint with token retrieved from cache or new and saw results.
 
 July 24: Testing the normalizer on the api call and seeing issues with trying to put a brand in a defined picklist and separating brand from entire title. 
 
@@ -53,3 +53,5 @@ July 27: Idempotency, distributed system failure, and guardrails to protect in t
 * thundering herd problem: when a server is down, we anticipate that once its back up the retries will come in from the client all at once. Therefore assigning randomness or jitter to client requests allows breathing time in between so the server can recover instead of all the retries coming at once.
 
 July 28:
+- a workflow beats an agent when a pre-identified set of tasks will always be applicable
+- the augmented llm is basically the building blocks of all llm agents/workflows  - retrieval (pull context), tools(which functions), memory(carry information across steps).
