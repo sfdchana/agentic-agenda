@@ -57,3 +57,8 @@ July 28:
 - the augmented llm is basically the building blocks of all llm agents/workflows  - retrieval (pull context), tools(which functions), memory(carry information across steps).
 - The principle: anywhere untrusted data enters your system — API responses, user input, and especially LLM output - validate at the door. In Python you'd use Pydantic: parse, then assert the object matches the taste schema, and flag/reject if not. Even when it "looks right," validation is the difference between "the model was wrong and I caught it instantly" and "the model was wrong and I found out when the portal broke."
 
+August 16:
+- Why continuous axes instead of categorical buckets? What does "0.8 edgy" capture that a tag "edgy" can't? axes represent a spectrum that can't be clearly defined in pre-existing values. 0.8 edgy can capture a relative level that a static tag can't.
+- ANN Index: a universal specialized data structure used in vector databases and machine learning to find approximate closest search results by trading accuracy for lower latency and more speed.
+- B-tree index: an index tree used by relational databases to store sorted date. Think indexing fields in salesforce for search.
+- online/offline retrieval vs ranking: each process has both online and offline components; offline processes can be used to create an ANN index that can be reused in online processes and similar.
