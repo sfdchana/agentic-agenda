@@ -1,6 +1,6 @@
 # Day 12 — Taste schema I: define the axes
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** the continuous taste *dimensions* that become both your schema fields AND your map's axes — and why a spectrum captures what a category can't.
 
