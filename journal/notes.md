@@ -62,3 +62,10 @@ August 16:
 - ANN Index: a universal specialized data structure used in vector databases and machine learning to find approximate closest search results by trading accuracy for lower latency and more speed.
 - B-tree index: an index tree used by relational databases to store sorted date. Think indexing fields in salesforce for search.
 - online/offline retrieval vs ranking: each process has both online and offline components; offline processes can be used to create an ANN index that can be reused in online processes and similar.
+
+August 17:
+- some takeaways from fine tuning your AI model: evaluations are key and any evaluation correction is a dataset. 
+- looking at your data is the single most important aspect of bettering your model so remove all friction and make it super easy to look at your data, creating whatever kind of view or report or interface that'll help you do that.
+
+August 18:
+- 
