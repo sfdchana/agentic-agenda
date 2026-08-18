@@ -1,6 +1,6 @@
 # Day 13 — Taste schema II: objects + relationships
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to model new objects (designer, axis, taste reference) and *relate* them to items — real relational data modeling.
 
