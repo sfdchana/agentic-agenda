@@ -1,6 +1,6 @@
 # Day 14 — Taste schema III: lock it in (the migration)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to turn a schema *design* into real DDL and apply it safely to a live database.
 
