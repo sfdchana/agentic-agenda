@@ -68,4 +68,6 @@ August 17:
 - looking at your data is the single most important aspect of bettering your model so remove all friction and make it super easy to look at your data, creating whatever kind of view or report or interface that'll help you do that.
 
 August 18:
-- 
+- item_axis_scores in a table would represent each line item of clothing (think opportunity line item in salesforce) and it's scoring.
+
+August 19:
