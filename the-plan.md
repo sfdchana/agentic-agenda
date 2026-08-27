@@ -26,6 +26,9 @@ project — a taste-ranked, visually-mapped discovery layer over eBay's massive
 resale inventory — is *directionally what the biggest player in resale is actively
 investing in.* "Make Depop out of eBay listings" isn't a hobby; it's a real market
 thesis. It's the portfolio narrative AND the interview story AND the content angle.
+eBay is the **POC, not the ceiling** — the north star is bigger: bringing taste and
+curation to **pre-loved / circular fashion for the under-34 generation** (the exact
+strategic goal named in the acquisition). eBay is just where I *prove* it first.
 **Don't pivot — deepen.**
 
 **The dual engine (two tracks that feed each other):**
@@ -34,6 +37,21 @@ thesis. It's the portfolio narrative AND the interview story AND the content ang
   the rooms (sets, parties, people in the space). With ~zero industry contacts,
   building in public is how the contacts find *me*. Social isn't a separate grind —
   it's the **exhaust of the build**: low time, high differentiation.
+
+**"Voice, not influencer" (a co-equal track).** An influencer's product is their
+*persona* — being watched. A **voice's** product is a **point of view + a body of
+work**; people follow the ideas and the build, not the face. That's what I am: a
+**builder with taste** — I make the thing *and* I have an articulable eye. So the
+voice track is **co-equal in importance** with the technical track, but **not in
+daily time** — because the content is byproduct. Three lanes, all exhaust of what
+I'm already doing:
+1. **the build** — the taste engine / map / schema (making-of),
+2. **the POV** — my ideas on taste (tension, the four moves, "what makes a piece stop you"),
+3. **the finds** — curated pieces (proof of the eye).
+**Cadence:** ~10–15 min/day *capture* (save a find, jot an idea, screenshot the
+build — never compose from a blank page), then *ship 1–2 posts/week* from what I
+captured. High consistency, low incremental time. The discipline is showing up
+weekly, not spending hours.
 
 **The identity fuel.** "Finding clothes that feel like me" — sharpened by a real
 identity shift — is the emotional core. This is me turning a strong, specific eye
