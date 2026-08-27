@@ -16,6 +16,41 @@ write Part 2 in December, once I see how the first half actually went.
 - LinkedIn updated with the end-to-end outcomes I've owned at work,
 - resume rewritten + a target-company list drafted (for later, not to apply yet).
 
+## North Star — where this is really going
+*Added late Aug 2026, after a survival-month away (solo-parenting + full-time) and a renewed-focus reset. More capacity now; stabilized focus.*
+
+**The thesis, and it's sharp: build the taste layer eBay bought Depop to get.**
+eBay acquired Depop (~$1.6B, 2021) because eBay has the scale + inventory but lacks
+curation, taste, and Gen-Z appeal — Depop has the taste and the community. My
+project — a taste-ranked, visually-mapped discovery layer over eBay's massive
+resale inventory — is *directionally what the biggest player in resale is actively
+investing in.* "Make Depop out of eBay listings" isn't a hobby; it's a real market
+thesis. It's the portfolio narrative AND the interview story AND the content angle.
+**Don't pivot — deepen.**
+
+**The dual engine (two tracks that feed each other):**
+- **Build** (taste-map + pipeline) → technical credibility → out of Salesforce → fashion-tech job.
+- **Voice** (@thefashionrepo, taste-as-data content, the map itself) → network + into
+  the rooms (sets, parties, people in the space). With ~zero industry contacts,
+  building in public is how the contacts find *me*. Social isn't a separate grind —
+  it's the **exhaust of the build**: low time, high differentiation.
+
+**The identity fuel.** "Finding clothes that feel like me" — sharpened by a real
+identity shift — is the emotional core. This is me turning a strong, specific eye
+into something real. Nobody else has my taste; that's the moat, not a weakness.
+
+**The rough path (a shape, not a cage):**
+- now → ~6mo: build the taste-map; start posting the build + the finds.
+- ~6–12mo: internal title change (out of pure Salesforce); one live project; first fashion-tech contacts via the content.
+- ~12–18mo: fashion-tech (or adjacent) job; a real network.
+- 2–5yr: a known voice in taste / resale-tech; in the rooms; work = passion.
+I reached a dream once with no clear path. Same move again: build something
+undeniable, be visible, do what it takes.
+
+**The stylist detour, filed:** the on-set / celebrity-stylist dream is real, but the
+smarter door to the same rooms is *being the taste-tech person people invite in* —
+durable leverage, not starting from zero in a field I have no experience in.
+
 **Focus.** Preparing clean, structured data for AI is the part that matters most.
 Around it: Python (home base), TypeScript, LangChain, LangGraph, Braintrust
 (evals), Langfuse (tracing). The vehicle is real fashion-tech / resale-market
