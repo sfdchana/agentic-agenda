@@ -1,6 +1,6 @@
 # Day 15 — Data I: seed designers on the axes (your ground truth)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how hand-labeled ground truth anchors a taste model — before any AI touches it.
 
