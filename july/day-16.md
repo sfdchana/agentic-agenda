@@ -5,7 +5,10 @@
 **After this you should know:** how *exemplar images* define a dimension better than a text label — your visual-first instinct, formalized.
 
 ## 📖 Read (~20 min)
-AWS Builders' Library — *"Timeouts, retries, and backoff with jitter"* (aws.amazon.com/builders-library). Get: exponential backoff, jitter, retry storms — you'll need this when the classifier hits eBay at volume.
+Google ML Crash Course — **Embeddings**
+(https://developers.google.com/machine-learning/crash-course/embeddings). Get:
+representing things as *points in a space* so similar things sit near each other —
+literally your sliders + `reference_blend` ("X meets Y" = the point between them).
 
 ## 🛠️ Build (~20 min) — taste-map project
 Add a handful of **taste-reference photos** — the images that anchor each axis pole (a *very feminine* example, a *very edgy* one). Store their URLs against the axis/pole in `taste_references`. Photos as data — exactly your instinct.
