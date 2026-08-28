@@ -69,6 +69,22 @@ undeniable, be visible, do what it takes.
 smarter door to the same rooms is *being the taste-tech person people invite in* —
 durable leverage, not starting from zero in a field I have no experience in.
 
+**Strategy in the AI era (Aug 2026 sharpening).** Building is *commoditized* — AI made
+it cheap and fast, and fashion-tech is flooded with apps and platforms. So the
+scarce, valuable thing is **attention + taste**, not the build itself. What follows:
+- I am **not building a platform** to win a crowded market. The build is (a) a
+  *defensible portfolio project* (gets the job) and (b) a *content engine* (feeds the
+  voice). That's a far lower bar than "launch a startup" — freeing.
+- The moat is **my taste + my ability to hold attention.** That's *why* the voice
+  track is co-equal, not a nice-to-have.
+- **Content craft is a real skill to build, not a hand-wave.** Making refined,
+  attention-grabbing posts from *listing photos* (no personal shoots) is genuinely
+  hard. The technique: **cut the piece out of its messy listing photo → place it
+  clean on my palette → consistent type + grid → an analytical / catalog framing**
+  (which is forgiving of rough source photos, because it reads as *analysis*, not
+  glamour). And curate for finds that also photograph well — visual curation is part
+  of the taste.
+
 **Focus.** Preparing clean, structured data for AI is the part that matters most.
 Around it: Python (home base), TypeScript, LangChain, LangGraph, Braintrust
 (evals), Langfuse (tracing). The vehicle is real fashion-tech / resale-market
