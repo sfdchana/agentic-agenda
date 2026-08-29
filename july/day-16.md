@@ -1,6 +1,6 @@
 # Day 16 — Data II: taste-reference photos (anchor each pole)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how *exemplar images* define a dimension better than a text label — your visual-first instinct, formalized.
 
