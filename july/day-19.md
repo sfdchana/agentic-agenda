@@ -5,7 +5,9 @@
 **After this you should know:** how to surface model output next to the human, in the place the human already works.
 
 ## 📖 Read (~20 min)
-*The Twelve-Factor App* (12factor.net) — Config, Processes, Dependencies. Get: config in env, stateless processes — clean, deployable services.
+**The Twelve-Factor App** (https://12factor.net) — read *Config*, *Processes*,
+*Dependencies*. Get: config in the environment, stateless processes — the
+fundamentals of a clean, deployable service (the stuff Salesforce hid from you).
 
 ## 🛠️ Build (~20 min) — taste-map project
 In `admin.html`, render each pending item's **taste read** (base / subverted_by / axis scores) **next to its photo**. This is the moment you can finally *see and judge* in your portal instead of the terminal.

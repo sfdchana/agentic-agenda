@@ -5,7 +5,9 @@
 **After this you should know:** how to take the taste map from working to *beautiful* and on-brand — the public-facing version.
 
 ## 📖 Read (~15 min)
-A short **mobile-first / responsive** piece (a *Refactoring UI* section or MDN responsive basics). Get: mobile-first, breakpoints, intentional empty/error states.
+MDN — **Responsive design**
+(https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design).
+Get: mobile-first, breakpoints — how your taste map looks right on a phone, not just a laptop.
 
 ## 🛠️ Build (~20 min) — taste-map project
 Polish the taste map: your palette (bark / white / cherry / blush), clean photo-dots, hover states, responsive layout. This is the "make it cute" day — the version you'd put on the site.

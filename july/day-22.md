@@ -5,7 +5,10 @@
 **After this you should know:** what it costs to score the archive on the axes, and the levers that control it. Capacity thinking, concrete.
 
 ## 📖 Read (~20 min)
-Anthropic **prompt caching** docs (docs.anthropic.com) + a short token-economics piece. Get: what caching caches; the cost/latency/quality tradeoff across model sizes.
+Anthropic — **Prompt caching**
+(https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching). Get: what
+caching actually caches + the cost/latency/quality tradeoff across model sizes —
+the levers on your scoring bill.
 
 ## 🛠️ Build (~20 min) — taste-map project
 Batch-score ~50 items on the axes. Measure tokens in/out, total cost, latency. Try one lever — a cheaper model, or a cached prompt — and compare. Apply the **funnel + judge-once** rules from the plan.

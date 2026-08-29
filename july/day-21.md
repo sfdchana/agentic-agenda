@@ -5,7 +5,10 @@
 **After this you should know:** what a "taste profile" looks like assembled from axis scores — your taste, as an aggregate.
 
 ## 📖 Read (~20 min)
-A primer on **content-based vs collaborative filtering** (Eugene Yan or a clear intro). Get: content-based = item attributes (your axes); collaborative = behavior.
+Google ML Crash Course — **Collaborative filtering**
+(https://developers.google.com/machine-learning/recommendation/collaborative/basics).
+Get: the *other* kind of recommendation — from behavior/patterns, not attributes.
+You use content-based now (your sliders); this is where it can go next.
 
 ## 🛠️ Build (~20 min) — taste-map project
 In admin, show an aggregate **taste-profile view** — how your archive distributes across the axes (where your taste clusters). Content-based, straight from `item_axis_scores`.
