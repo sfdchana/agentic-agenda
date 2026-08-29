@@ -1,6 +1,6 @@
 # Day 17 — Data III: auto-score items on the axes
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how the vision judge turns your axes into real scores on real items — the machine positioning pieces on your map.
 
