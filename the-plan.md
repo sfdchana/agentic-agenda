@@ -53,6 +53,21 @@ build — never compose from a blank page), then *ship 1–2 posts/week* from wh
 captured. High consistency, low incremental time. The discipline is showing up
 weekly, not spending hours.
 
+**The account, reframed (Aug 2026 — "post finds" was too small).** @thefashionrepo
+is a **showcase of my projects + my self**, not a curated-finds feed.
+**Spine:** *"I'm building the shopping experience I wish existed."* Lanes under it:
+- **Redesigns / "what online shopping should be"** — mockups of features I wish
+  existed (eBay / Depop / TheRealReal reimagined with taste). My taste engine IS the
+  first one. *The strongest, most unique lane — portfolio + content + take at once,
+  and it uses my design strength.*
+- **The build** — documenting the taste engine as I make it.
+- **Outfits / personal taste** — me, my eye, my style.
+- **Opinions** — POV on shopping + taste.
+The "unique take" isn't something to find — I *am* it: the rare overlap of **taste +
+building**. The build *shown as* my vision is what turns "engineer" into "the person
+building the future of fashion-tech." Documenting is co-equal *because* it's the
+half that makes the work legible as the dream.
+
 **The identity fuel.** "Finding clothes that feel like me" — sharpened by a real
 identity shift — is the emotional core. This is me turning a strong, specific eye
 into something real. Nobody else has my taste; that's the moat, not a weakness.
