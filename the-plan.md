@@ -68,6 +68,20 @@ building**. The build *shown as* my vision is what turns "engineer" into "the pe
 building the future of fashion-tech." Documenting is co-equal *because* it's the
 half that makes the work legible as the dream.
 
+**Entry strategy (Aug 2026 — clarified): engineering-first, targeted outreach, not viral.**
+The realistic door is using my *existing leverage* (engineering) to get INTO a
+fashion-tech company, then inching toward the creative/taste side once I have a seat.
+Sequence:
+1. **Build 1–2 genuinely impressive portfolio projects** (the slider taste-search is #1).
+2. **Put them somewhere pointable** — the website + a few clean write-ups/posts.
+3. **Targeted cold outreach** to real humans on target teams — engineers, eng managers,
+   founders at *smaller* fashion-tech / resale companies (reachable, and they value a
+   unique angle). Lead with the *project + genuine why*, never a generic ask.
+Key reframe: my fashion+eng overlap is a **weak viral play but a strong 1:1 play** — I
+don't need to beat a million builders for broadcast attention; I need ONE hiring manager
+to think "this person actually gets both." Social = **documentation / a pointable
+portfolio**, not a growth engine. Substance over virality. (6–18 mo play; matches the plan.)
+
 **The identity fuel.** "Finding clothes that feel like me" — sharpened by a real
 identity shift — is the emotional core. This is me turning a strong, specific eye
 into something real. Nobody else has my taste; that's the moat, not a weakness.
