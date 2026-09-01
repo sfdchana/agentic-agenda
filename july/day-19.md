@@ -1,6 +1,6 @@
 # Day 19 — Portal I: show the taste read + photo in admin
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to surface model output next to the human, in the place the human already works.
 
