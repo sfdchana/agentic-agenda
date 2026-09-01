@@ -67,7 +67,22 @@ August 17:
 - some takeaways from fine tuning your AI model: evaluations are key and any evaluation correction is a dataset. 
 - looking at your data is the single most important aspect of bettering your model so remove all friction and make it super easy to look at your data, creating whatever kind of view or report or interface that'll help you do that.
 
-August 18:
+August 18: Day 17 (Day 18 done on July 15)
 - item_axis_scores in a table would represent each line item of clothing (think opportunity line item in salesforce) and it's scoring.
 
-August 19:
+August 27-31: Days 19-21
+- Day 19: The 12 factor app is an application consisting of 12 factors that make up best practices for an application. Some of the steps include  keeping all environments, like prod and staging, the same using the same backing services even though may be tempted to use local services for non prod environment. other factors in the 12 Factor app include starting and stopping applications, treating logs by accessing them in the terminal and not necessarily storing them,  concept of processes sharing nothing and concurrency by horizontal processes being run at the same time. also storing config outside the code, declaring dependencies and maintaining a unified single codebase.
+
+Port Binding: the ability for your application to be exposed on its own, for example, when hosting something with a local host in the URL names, you can call it without being part of a bigger service or software or application.
+
+- Day 20:  test pyramid is a pyramid with unit tests at the bottom, service tests in the middle, and the UI test at the top, with the bottom unit test being the most tests you should do, and then the lesser as a pyramid goes up. unit tests can include mocking or stubbing, which is defining the behavior for tests without actually the test is actually doing the exact behavior. Think of mock tests for HTTP call outs in Salesforce.
+
+- Day 21: Collaborative filtering: ignores item attributes entirely and learns from behavior patterns across many users. "People who liked the things you liked also liked this other thing → here you go." It never needs to know why — it doesn't look at whether something is edgy or feminine. It just finds people similar to you by behavior and recommends what they gravitated to.
+
+- Day 22:
+
+- Day 23:
+
+- Day 24:
+
+- Day 25:
