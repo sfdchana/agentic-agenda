@@ -1,6 +1,6 @@
 # Day 20 — Portal II: capture your corrections (the dataset)
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how human-in-the-loop corrections become a labeled dataset — the thing that makes the whole system *yours*.
 
