@@ -1,6 +1,6 @@
 # Day 22 — Portal IV: batch-score + cost
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** what it costs to score the archive on the axes, and the levers that control it. Capacity thinking, concrete.
 
