@@ -1,6 +1,6 @@
 # Day 21 — Portal III: the taste-profile view
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** what a "taste profile" looks like assembled from axis scores — your taste, as an aggregate.
 
