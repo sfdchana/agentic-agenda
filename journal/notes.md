@@ -79,10 +79,13 @@ Port Binding: the ability for your application to be exposed on its own, for exa
 
 - Day 21: Collaborative filtering: ignores item attributes entirely and learns from behavior patterns across many users. "People who liked the things you liked also liked this other thing → here you go." It never needs to know why — it doesn't look at whether something is edgy or feminine. It just finds people similar to you by behavior and recommends what they gravitated to.
 
-- Day 22:
+- Day 22: Prompt caching means caching the defined process input  so that if the same prompt is submitted again, it doesn't have to re-query to get the process input, which is the first step. This doesn't mean that the the result will be identical to anything that has been cached, since the processed input is identical. The result depends on a lot of other factors, and the processed input will always be identical whether it's cached or not, so caching just saves time and money. 
 
 - Day 23:
+1. Performance vs scalability: Scalability is the ability for the system to produce the same output, even if with increased load. Performance is how the system works for the initial user or initial need.
+2. Latency vs throughput: Latency is how long it takes for something to load or for an action to work etc while is the amount of work a system computes in a given amount of time 
+3. Availability vs consistency: 
 
-- Day 24:
+- Day 24: Responsive web design ensures that nothing is fixed and that sizing and styling are in response to the size of the browser.  there are frameworks and guides to help create responsible design and update attributes while keeping frontend intact. Can also be applied with images.
 
-- Day 25:
+- Day 25: I read this article early around this month. The things that stuck out to me were building with the least amount of tools and at the simplest level possible, and adding complexity only if needed. Using a workflow in place of an agent or a different model that has free reign if the workflow could solve the need.
