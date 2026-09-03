@@ -1,6 +1,6 @@
 # Day 25 — Wrap: README + demo of the taste-map project
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** the taste-map project is documented, demoable, and defensible — and you know what Month 2 deepens.
 
