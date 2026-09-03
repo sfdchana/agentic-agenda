@@ -1,6 +1,6 @@
 # Day 23 — Frontend I: the taste-map visualization
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to plot your archive as a taste map — photos positioned on the axes — and reason about it at scale.
 
