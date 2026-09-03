@@ -84,7 +84,7 @@ Port Binding: the ability for your application to be exposed on its own, for exa
 - Day 23:
 1. Performance vs scalability: Scalability is the ability for the system to produce the same output, even if with increased load. Performance is how the system works for the initial user or initial need.
 2. Latency vs throughput: Latency is how long it takes for something to load or for an action to work etc while is the amount of work a system computes in a given amount of time 
-3. Availability vs consistency: 
+3. Availability vs consistency: In a distributed system you can't perfectly have both at once, so you trade off. Consistency = every reader sees the latest write (nobody gets stale data). Availability = the system always answers, even if the answer might be slightly out of date. Classic example: a bank balance leans consistent (never show wrong money); a social feed leans available (a like showing up a second late is fine). For your taste pipeline: it's fine to lean available — if a freshly-scored item takes a moment to appear on the map, no harm. You don't need strict consistency, which keeps your system simpler.
 
 - Day 24: Responsive web design ensures that nothing is fixed and that sizing and styling are in response to the size of the browser.  there are frameworks and guides to help create responsible design and update attributes while keeping frontend intact. Can also be applied with images.
 
