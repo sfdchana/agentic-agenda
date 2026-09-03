@@ -1,6 +1,6 @@
 # Day 24 — Frontend II: make it cute + responsive
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to take the taste map from working to *beautiful* and on-brand — the public-facing version.
 
