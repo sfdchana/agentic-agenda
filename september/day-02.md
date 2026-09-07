@@ -1,6 +1,6 @@
 # Day 2 — Harden: retries & backoff with jitter
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to survive transient failures without hammering the
 API — the single most important reliability pattern.
