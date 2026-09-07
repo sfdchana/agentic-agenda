@@ -1,6 +1,6 @@
 # Day 3 — Harden: error handling & partial failure
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to make a batch pipeline resilient — one bad item
 doesn't sink the whole run, and re-running is always safe.
