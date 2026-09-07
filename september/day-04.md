@@ -1,6 +1,6 @@
 # Day 4 — Harden: a scheduled worker
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how the pipeline runs *on its own* on a schedule instead
 of only when you run it by hand.
