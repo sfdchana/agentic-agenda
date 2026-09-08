@@ -1,6 +1,6 @@
 # Day 5 — Harden: the architecture write-up
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to explain your own system — boundaries, idempotency,
 what breaks at 10×. Ships August's `archive-ingest` deliverable, documented.
