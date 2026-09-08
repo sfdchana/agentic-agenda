@@ -101,4 +101,4 @@ Elastic scaling is the automated process of increasing or decreasing computing r
 
 Day 4: Cron Jobs - Railway Docs: Cron jobs use crontab expression and are meant to run on schedule and then exit any resources used to execute the job when they are finished, so it's clean. the cron job that ran doesn't exit its services. The next cron jobs will be skipped because this whole system runs on the fact that the resources are quit once a job is finished. This mechanism is a feature of Cron, not a bug. It's meant to work this way, so there are never two processes running at the same time.
 
-Day 5:
+Day 5: An architectural decision record is what captures a single architectural decision that you need to make and its rationale, why it may affect certain existing software and architecture. Think comments in a class of code on a smaller scale that explain why things were done a certain way.
