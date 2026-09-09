@@ -1,6 +1,6 @@
 # Day 6 — LangChain: set up Python + a first chain
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to stand up a Python AI environment and make your first
 LangChain model call — the new stack, hello-world'd.
