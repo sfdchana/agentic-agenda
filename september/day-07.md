@@ -1,6 +1,6 @@
 # Day 7 — LangChain: structured output with Pydantic
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to force the model to return a typed, validated object
 — your axis scores as a real schema, not loose JSON.
