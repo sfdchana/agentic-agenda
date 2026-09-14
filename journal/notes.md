@@ -108,3 +108,7 @@ Day 6: LangChain is a framework and interface that includes a chained system of 
 *In programming, stateful means a system or component is designed to remember past interactions or data (known as "state") to influence future operations.
 
 Day 7: 
+
+Day 8: learning about pydantic and validating schemas/data models using it (in python). Pydantic can also do data conversion, similar to java/apex when we make a datetime field date or a number a string field etc. Pydantic also has nested models for more complex data structions, think levels of relationships in salesforce. Pydantic also has it's own __init__() implementation. This implementation delegates validation to pydantic-core.
+
+Day 9: LangChain overview: langChain provides create_agent, which is a highly configurable harness for AI. It encompasses everything related to the model loop - prompt, tools and related middleware. The benefits of using langChain includes one interface for all model building, a highly configurable harness, and langGraph and langSmith available - the latter for debugging and the former is what langChain is built on top of so both available.
