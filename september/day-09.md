@@ -1,6 +1,6 @@
 # Day 9 — LangChain: prompt templates & one source of truth
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to keep your axis rubric in one reusable place in
 Python — same "single source of truth" idea as `axes.js`.
