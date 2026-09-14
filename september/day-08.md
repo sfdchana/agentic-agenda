@@ -1,6 +1,6 @@
 # Day 8 — LangChain: port your classifier to a chain
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how your working Node classifier becomes a clean Python
 chain — image + prompt → validated axis scores.
