@@ -1,6 +1,6 @@
 # Day 10 — LangChain: write scores back to Postgres from Python
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how the Python classifier persists to the *same* database
 your Node app uses — two services, one source of truth.
