@@ -1,6 +1,6 @@
 # Day 11 — LangGraph: the mental model
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** what a graph *is* — nodes, state, edges — and why a
 classify→self-check→route flow wants one instead of a plain chain.
