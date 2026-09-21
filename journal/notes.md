@@ -119,6 +119,6 @@ Day 11: LangGraph is a low-maintenance tool used to implement AI agents into you
 
 Day 12:  LangGraph essentially models agent workflows as graphs. It's made up of states, nodes, and edges. States is essentially the data in your system. Nodes are the elements, and edges are what connect the nodes by determining which node to execute by the current. It also uses messages as input and has many safety features to help avoid recursion, idempotency etc. Think salesforce flows?
 
-Day 13: 
+Day 13: We covered this back in July, maybe. This covers different workflows and explains why workflows are different than agents, because workflows follow predetermined paths while agents have autonomy. 
 
-Day 14:
+Day 14: Conditional edges accept the name of a node and a “routing function” to call after that node is executed.
