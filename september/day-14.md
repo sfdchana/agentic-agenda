@@ -1,6 +1,6 @@
 # Day 14 — LangGraph: conditional routing
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how a graph *branches* — sending confident results one way
 and uncertain ones to human review.
