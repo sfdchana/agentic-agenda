@@ -113,7 +113,7 @@ Day 8: learning about pydantic and validating schemas/data models using it (in p
 
 Day 9: LangChain overview: langChain provides create_agent, which is a highly configurable harness for AI. It encompasses everything related to the model loop - prompt, tools and related middleware. The benefits of using langChain includes one interface for all model building, a highly configurable harness, and langGraph and langSmith available - the latter for debugging and the former is what langChain is built on top of so both available.
 
-Day 10: 
-Day 11: 
-Day 12: 
+Day 10: Psycopg is a framework that integrates Python with your Postgres database. It's an adapter that uses several objects that you can customize to relate your Postgres to your code.
+Day 11: LangGraph is a low-maintenance tool used to implement AI agents into your application. It's very low-level and focused entirely on agent orchestration. LangGraph’s core strength is the ability to mix deterministic steps with LLM-driven agentic steps in a single graph. LangSmith is used for debugging, tracing and can also be used for deployment.
+Day 12:  LangGraph essentially models agent workflows as graphs. It's made up of states, nodes, and edges. States is essentially the data in your system. Nodes are the elements, and edges are what connect the nodes by determining which node to execute by the current. It also uses messages as input and has many safety features to help avoid recursion, idempotency etc. Think salesforce flows?
 Day 13: 
