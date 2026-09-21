@@ -1,6 +1,6 @@
 # Day 12 — LangGraph: build a minimal graph
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to define state and wire nodes into a running graph —
 the smallest thing that works.
