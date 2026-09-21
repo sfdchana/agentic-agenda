@@ -1,6 +1,6 @@
 # Day 13 — LangGraph: add a self-check node
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to make the model critique its own output — the
 "evaluator" pattern that catches confident mistakes.
