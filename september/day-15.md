@@ -1,6 +1,6 @@
 # Day 15 — LangGraph: run it on real items
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** the whole graph working end to end on real eBay pieces —
 classify → self-check → route.
