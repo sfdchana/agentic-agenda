@@ -1,6 +1,6 @@
 # Day 16 — Ship: store ai vs human classification
 
-- [ ] Done
+- [x] Done
 
 **After this you should know:** how to capture the model's answer *and* your correction
 side by side — the divergence is the dataset.
